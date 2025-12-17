@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rarity-common: #c7ced8;
+  --rarity-rare: #6fa8ff;
+  --rarity-epic: #c184ff;
+  --rarity-legendary: #f5b963;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-gradient-to-b from-slate-50 to-slate-100 text-slate-900 min-h-screen antialiased;
+  font-family: 'Noto Sans SC', 'DM Sans', 'Inter', system-ui, sans-serif;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-panel {
+  @apply bg-white/70 border border-slate-200 rounded-xl shadow-sm;
+}
+
+.rarity-chip {
+  @apply text-[11px] uppercase tracking-wide font-semibold px-2 py-1 rounded-full bg-white border border-slate-200;
+}

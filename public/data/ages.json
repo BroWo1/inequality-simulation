@@ -1,0 +1,32 @@
+{
+  "6": { "fixedEvents": ["school-start"] },
+  "7": { "fixedEvents": ["annual-school-life"] },
+  "8": { "fixedEvents": ["annual-school-life"] },
+  "9": { "fixedEvents": ["annual-school-life"] },
+  "10": { "fixedEvents": ["annual-school-life"] },
+  "11": { "fixedEvents": ["annual-school-life"] },
+  "12": { "fixedEvents": ["annual-school-life"] },
+  "13": { "fixedEvents": ["annual-school-life"] },
+  "14": { "fixedEvents": ["annual-school-life"] },
+  "15": {
+    "fixedEvents": ["annual-school-life"],
+    "randomEventsOverride": true,
+    "randomEvents": [
+      { "id": "high-school-key", "priority": 2 },
+      { "id": "high-school-normal", "priority": 1 },
+      { "id": "high-school-zhongzhuan", "priority": 0 }
+    ]
+  },
+  "16": { "fixedEvents": ["annual-school-life"] },
+  "17": { "fixedEvents": ["annual-school-life"] },
+  "18": {
+    "fixedEvents": ["graduation-day"],
+    "randomEventsOverride": true,
+    "randomEvents": [
+      { "id": "college-duke", "priority": 4 },
+      { "id": "college-tsinghua", "priority": 3 },
+      { "id": "college-second-tier", "priority": 2 },
+      { "id": "college-local", "priority": 0 }
+    ]
+  }
+}

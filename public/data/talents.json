@@ -1,0 +1,201 @@
+[
+  {
+    "id": "keyboard-warrior",
+    "name": "Keyboard Man",
+    "description": "You have a PhD in internet arguments. If someone says 'Good Morning', you ask for their source.",
+    "grade": 0,
+    "effects": {},
+    "exclusions": ["peace-lover"]
+  },
+  {
+    "id": "fish-touching-master",
+    "name": "Fish Touching Pro",
+    "description": "The ancient art of 'Mo Yu' (slacking off). You can look incredibly busy while actually browsing Weibo in a tiny window.",
+    "grade": 0,
+    "effects": {},
+    "exclusions": ["workaholic"]
+  },
+  {
+    "id": "social-cow",
+    "name": "Social Cow",
+    "description": "The opposite of social anxiety. You will loudly sing 'Happy Birthday' to a stranger in a hotpot restaurant just for a discount.",
+    "grade": 0,
+    "effects": { "CHR": 1 },
+    "exclusions": ["social-terror"]
+  },
+  {
+    "id": "social-terror",
+    "name": "Social Terror",
+    "description": "Making a phone call requires 30 minutes of mental preparation. You pray the delivery guy leaves the food at the door.",
+    "grade": 0,
+    "effects": { "CHR": -1 },
+    "exclusions": ["social-cow"]
+  },
+  {
+    "id": "milk-tea-blood",
+    "name": "Boba Bloodline",
+    "description": "Your body is 70% sugar and tapioca pearls. You treat dehydration with large cups of cheese-foam oolong.",
+    "grade": 0,
+    "effects": { "MNY": -1 }
+  },
+  {
+    "id": "gacha-victim",
+    "name": "Non-Chieftain",
+    "description": "The 'Fei Qiu' (Unlucky African) gene. You never pull the SSR card until the hard pity mechanism kicks in.",
+    "grade": 0,
+    "effects": { "SPR": -1 },
+    "exclusions": ["europe-emperor"]
+  },
+  {
+    "id": "europe-emperor",
+    "name": "Europe Emperor",
+    "description": "The 'Ou Huang'. You pull the rarest character on a single free ticket. Your friends secretly hate you.",
+    "grade": 0,
+    "effects": { "SPR": 1 },
+    "exclusions": ["gacha-victim"]
+  },
+  {
+    "id": "barbell-spirit",
+    "name": "The Lever",
+    "description": "A true 'Gang Jing'. Even if the boss says '1+1=2', you feel a biological urge to argue 'What about in binary?'",
+    "grade": 0,
+    "effects": {}
+  },
+  {
+    "id": "bald-destiny",
+    "name": "Mediterranean Future",
+    "description": "Your hairline is retreating faster than the French army. A sign of great wisdom (or programming ability).",
+    "grade": 0,
+    "effects": {}
+  },
+  {
+    "id": "direction-idiot",
+    "name": "Lu Chi",
+    "description": "You can get lost in your own bedroom. GPS navigation just confuses you more ('Turn East?' Where is East??).",
+    "grade": 0,
+    "effects": {}
+  },
+  {
+    "id": "straight-man-cancer",
+    "name": "Steel Straight Man",
+    "description": "You have absolutely no romantic radar. If a girl says 'I'm cold', you tell her she should have brought a jacket.",
+    "grade": 0,
+    "effects": { "CHR": -1 }
+  },
+  {
+    "id": "stay-up-champion",
+    "name": "Night Owl King",
+    "description": "You become alive at 2 AM. Sleep is for the weak. Your liver is crying.",
+    "grade": 0,
+    "effects": {}
+  },
+  {
+    "id": "urban-hukou",
+    "name": "Urban Hukou",
+    "description": "You hold a residency permit for a Tier-1 city. The gates to public services open easily for you.",
+    "grade": 3,
+    "effects": {},
+    "exclusions": ["rural-hukou"]
+  },
+  {
+    "id": "rural-hukou",
+    "name": "Rural Hukou",
+    "description": "Your residency is tied to your ancestral village. Moving to the city means living as a 'floater' without benefits.",
+    "grade": 1,
+    "effects": { "MNY": -1 },
+    "exclusions": ["urban-hukou"]
+  },
+  {
+    "id": "system-insider",
+    "name": "System Insider",
+    "description": "Your parents work for a state-owned enterprise (SOE) or the bureau. You know how the 'Iron Rice Bowl' works.",
+    "grade": 2,
+    "effects": { "MNY": 1 },
+    "exclusions": ["migrant-roots"]
+  },
+  {
+    "id": "migrant-roots",
+    "name": "Migrant Roots",
+    "description": "Your parents moved here for work. You are technically a 'local,' but you don't feel like one.",
+    "grade": 2,
+    "effects": {},
+    "exclusions": ["system-insider"]
+  },
+  {
+    "id": "only-child",
+    "name": "Little Emperor",
+    "description": "You are an only child. You carry the crushing weight of your entire family's expectations alone.",
+    "grade": 1,
+    "effects": { "MNY": 1 },
+    "exclusions": ["big-family"]
+  },
+  {
+    "id": "big-family",
+    "name": "Sister's Sacrifice",
+    "description": "You have siblings. Resources were often diverted to the eldest son, or you had to care for younger ones.",
+    "grade": 1,
+    "effects": { "SPR": 1, "MNY": -1 },
+    "exclusions": ["only-child"]
+  },
+  {
+    "id": "guanxi-network",
+    "name": "Guanxi Network",
+    "description": "Your family may not be rich, but they know a guy who knows a guy. Problems disappear after a phone call.",
+    "grade": 2,
+    "effects": { "CHR": 1 }
+  },
+  {
+    "id": "thick-face",
+    "name": "Thick Face",
+    "description": "You understand that shame is a tool for others to control you. You refuse to be controlled.",
+    "grade": 1,
+    "effects": { "SPR": 2 }
+  },
+  {
+    "id": "doing-business",
+    "name": "Merchant Instinct",
+    "description": "While others studied poetry, your family discussed profit margins at the dinner table.",
+    "grade": 1,
+    "effects": { "MNY": 1, "INT": -1 }
+  },
+  {
+    "id": "artistic-spirit",
+    "name": "Artistic Spirit",
+    "description": "You care more about expression than stability. Your relatives constantly ask 'but can you eat art?'",
+    "grade": 1,
+    "effects": { "CHR": 2, "MNY": -1 }
+  },
+  {
+    "id": "extra-workbooks",
+    "name": "Extra Workbooks",
+    "description": "More exercises, more repetition. It’s boring, but it gives you a small head start when allocating stats.",
+    "grade": 0,
+    "startingPointsBonus": 2,
+    "effects": {}
+  },
+  {
+    "id": "private-tutor",
+    "name": "Private Tutor",
+    "description": "One-on-one tutoring helps you patch weaknesses fast. You start with more allocation points.",
+    "grade": 1,
+    "startingPointsBonus": 4,
+    "effects": {}
+  },
+  {
+    "id": "elite-training-camp",
+    "name": "Elite Training Camp",
+    "description": "A high-intensity program with top teachers and resources. You start with a big pool of allocation points.",
+    "grade": 2,
+    "startingPointsBonus": 6,
+    "effects": {}
+  },
+  {
+    "id": "international-track",
+    "name": "International Track",
+    "description": "Your family chose the 'Guoji Lu' (international route). Bilingual education, SAT prep, and dreams of foreign universities.",
+    "grade": 2,
+    "rollWeight": 1,
+    "effects": { "MNY": -1, "INT": 1 },
+    "exclusions": ["rural-hukou"]
+  }
+]

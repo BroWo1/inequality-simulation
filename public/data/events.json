@@ -1,0 +1,2604 @@
+[
+  {
+    "id": "first-cry",
+    "schedule": [{ "age": 0, "weight": 10 }],
+    "text": "You entered the world with a cry. The hospital lights were bright, and strangers in masks smiled down at you.",
+    "conditions": [],
+    "effects": {},
+    "weight": 10
+  },
+  {
+    "id": "nicu-stay",
+    "schedule": [{ "age": 0, "weight": 3 }],
+    "text": "You were born early. Weeks in the NICU, wires and beeping machines. Your parents watched through the glass.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "STR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "first-steps",
+    "schedule": [{ "age": 1, "weight": 8 }],
+    "text": "You took your first wobbly steps. Everyone clapped. You promptly fell on your diaper.",
+    "conditions": [],
+    "effects": {},
+    "weight": 8
+  },
+  {
+    "id": "first-words",
+    "schedule": [{ "age": 1, "weight": 6 }],
+    "text": "You said your first word. Your parents argue over whether it was 'mama' or 'dada'.",
+    "conditions": [],
+    "effects": {},
+    "weight": 6
+  },
+  {
+    "id": "daycare-start",
+    "schedule": [{ "age": 2, "weight": 5 }],
+    "text": "First day at daycare. You cried when mom left, then forgot about her within ten minutes.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "nutrition-gap",
+    "schedule": [
+      { "age": 2, "weight": 3 },
+      { "age": 3, "weight": 2 }
+    ],
+    "text": "Fresh produce is expensive in your neighborhood; meals are mostly processed food.",
+    "conditions": [{ "MNY": { "max": 2 } }],
+    "effects": { "STR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "toddler-tantrum",
+    "schedule": [
+      { "age": 2, "weight": 4 },
+      { "age": 3, "weight": 3 }
+    ],
+    "text": "You threw yourself on the supermarket floor screaming for candy. Your mom pretended she didn't know you.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "bedtime-story",
+    "schedule": [
+      { "age": 3, "weight": 6 },
+      { "age": 4, "weight": 4 }
+    ],
+    "text": "Your parents read you a fantastical story before bed.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 6
+  },
+  {
+    "id": "loud-neighbors",
+    "schedule": [
+      { "age": 4, "weight": 3 },
+      { "age": 5, "weight": 3 }
+    ],
+    "text": "The apartment walls are thin. The noise next door makes it hard to sleep.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "playground-friend",
+    "schedule": [
+      { "age": 4, "weight": 5 },
+      { "age": 5, "weight": 5 }
+    ],
+    "text": "You made your first real friend at the playground. You shared your juice box.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "scraped-knee",
+    "schedule": [
+      { "age": 4, "weight": 4 },
+      { "age": 5, "weight": 3 },
+      { "age": 6, "weight": 2 }
+    ],
+    "text": "You fell off the swing and scraped your knee. The band-aid had cartoon characters on it.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "learning-to-share",
+    "schedule": [
+      { "age": 4, "weight": 4 },
+      { "age": 5, "weight": 3 }
+    ],
+    "text": "Another kid grabbed your toy. You learned that sharing is mandatory, not optional.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "kindergarten-graduation",
+    "schedule": [{ "age": 5, "weight": 6 }],
+    "text": "You wore a tiny cap and gown. Mom took 200 photos. You just wanted the cake.",
+    "conditions": [],
+    "effects": {},
+    "weight": 6
+  },
+  {
+    "id": "learning-to-read",
+    "schedule": [
+      { "age": 5, "weight": 5 },
+      { "age": 6, "weight": 4 }
+    ],
+    "text": "The letters started making sense. You read your first word out loud and felt like a genius.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "bike-without-training-wheels",
+    "schedule": [
+      { "age": 5, "weight": 4 },
+      { "age": 6, "weight": 5 }
+    ],
+    "text": "Dad let go of the seat. You wobbled, panicked, then realized you were doing it alone.",
+    "conditions": [],
+    "effects": { "STR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "annual-school-life",
+    "repeatable": true,
+    "text": "A new school year begins. New routines, new expectations. Friendships shift as you grow.",
+    "conditions": [],
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "natural-death",
+    "death": true,
+    "text": "Your time comes peacefully. The story ends here.",
+    "conditions": [],
+    "effects": {},
+    "weight": 0
+  },
+  {
+    "id": "fatal-heart-attack",
+    "death": true,
+    "schedule": [
+      { "age": 55, "weight": 1 },
+      { "age": 60, "weight": 1 },
+      { "age": 65, "weight": 2 },
+      { "age": 70, "weight": 3 }
+    ],
+    "text": "A sudden heart attack strikes without warning.",
+    "conditions": [],
+    "effects": {},
+    "weight": 1
+  },
+
+  {
+    "id": "school-start",
+    "text": "First day of school! You got a new backpack.",
+    "conditions": [],
+    "effects": { "INT": 1, "CHR": 1 },
+    "weight": 8
+  },
+  {
+    "id": "high-school-key",
+    "text": "You get accepted into a key high school. The workload is intense, but so are the opportunities.",
+    "conditions": [{ "INT": { "min": 8 } }, { "MNY": { "min": 4 } }],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 1,
+    "priority": 2
+  },
+  {
+    "id": "high-school-normal",
+    "text": "You enroll in a normal high school. Steady pace, steady progress.",
+    "conditions": [{ "INT": { "min": 5 } }, { "MNY": { "min": 2 } }],
+    "effects": { "INT": 1 },
+    "weight": 1,
+    "priority": 1
+  },
+  {
+    "id": "high-school-zhongzhuan",
+    "text": "You go to a vocational track (Zhongzhuan). You start learning practical skills early.",
+    "conditions": [],
+    "effects": { "STR": 1 },
+    "weight": 1,
+    "priority": 0
+  },
+  {
+    "id": "high-school-bnu-experimental",
+    "text": "You got into Beijing Normal University Experimental High School (北师大附属实验中学). The international department is a pipeline to American universities.",
+    "conditions": [{ "INT": { "min": 7 } }, { "MNY": { "min": 3 } }, { "talents": ["international-track"] }],
+    "effects": { "INT": 1 },
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "high-school-rdfz",
+    "text": "You got into Dalian American International School. You feel like your future ends here.",
+    "conditions": [{ "MNY": { "min": 5 } }, { "talents": ["international-track"] }],
+    "effects": { "INT": -1, "SPR": 1 },
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "high-school-qhfz",
+    "text": "You got into Tsinghua International School. The people are talented, but the teachers and staffs are Martian",
+    "conditions": [{ "MNY": { "min": 3 } }],
+    "effects": { "INT": -2},
+    "weight": 2
+  },
+  {
+    "id": "high-school-international",
+    "text": "You attend an international school. Classes in English, diverse classmates, and tuition that could buy a car.",
+    "conditions": [{ "MNY": { "min": 4 } }, { "talents": ["international-track"] }],
+    "effects": { "CHR": 1 },
+    "weight": 1,
+    "priority": 2
+  },
+  {
+    "id": "college-duke",
+    "text": "You head to Duke. The tuition is brutal, but the network is real.",
+    "conditions": [{ "INT": { "min": 8 } }, { "MNY": { "min": 7 } }, { "talents": ["international-track"] }],
+    "effects": { "CHR": 1, "MNY": -1 },
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-ivy-league",
+    "text": "Harvard, Yale, Princeton... the name opens doors before you even walk through them.",
+    "conditions": [{ "INT": { "min": 9 } }, { "MNY": { "min": 8 } }, { "talents": ["international-track"] }],
+    "effects": { "CHR": 1, "INT": 1 },
+    "weight": 1,
+    "priority": 5
+  },
+  {
+    "id": "college-uc-berkeley",
+    "text": "UC Berkeley. World-class academics and California sunshine. Your parents brag at every family dinner.",
+    "conditions": [{ "INT": { "min": 7 } }, { "MNY": { "min": 6 } }, { "talents": ["international-track"] }],
+    "effects": { "INT": 1 },
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "college-liberal-arts",
+    "text": "You attend a small liberal arts college in New England. Nobody in China has heard of it, but the education is solid.",
+    "conditions": [{ "INT": { "min": 6 } }, { "MNY": { "min": 7 } }, { "talents": ["international-track"] }],
+    "effects": { "CHR": 1 },
+    "weight": 1,
+    "priority": 2
+  },
+  {
+    "id": "college-tsinghua",
+    "text": "You get into Tsinghua. The campus is elite, and so are your classmates.",
+    "conditions": [{ "INT": { "min": 9 } }],
+    "effects": { "INT": -1 },
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "college-second-tier",
+    "text": "You attend a solid second-tier university. It’s not glamorous, but it’s a real step up.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "INT": 1 },
+    "weight": 1,
+    "priority": 2
+  },
+  {
+    "id": "college-local",
+    "text": "You attend a local college. You keep your head down and focus on building a stable future.",
+    "conditions": [],
+    "effects": {},
+    "weight": 1,
+    "priority": 0
+  },
+  {
+    "id": "freshman-orientation",
+    "schedule": [{ "age": 18, "weight": 5 }, { "age": 19, "weight": 3 }],
+    "text": "Freshman orientation. You wore the lanyard, attended the icebreakers, and pretended to remember everyone's names.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "dorm-roommate",
+    "schedule": [{ "age": 18, "weight": 5 }, { "age": 19, "weight": 4 }],
+    "text": "Your roommate snores like a chainsaw and leaves dishes in the sink. You learn the art of passive-aggressive notes.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "cafeteria-food",
+    "schedule": [
+      { "age": 18, "weight": 4 },
+      { "age": 19, "weight": 4 }
+    ],
+    "text": "The dining hall mystery meat strikes again. You've memorized which days to avoid.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "first-all-nighter",
+    "schedule": [
+      { "age": 18, "weight": 4 },
+      { "age": 19, "weight": 5 },
+      { "age": 20, "weight": 4 }
+    ],
+    "text": "Your first all-nighter. Three energy drinks, two mental breakdowns, one paper submitted at 7:59 AM.",
+    "conditions": [],
+    "effects": { "STR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "choosing-major",
+    "schedule": [{ "age": 19, "weight": 5 }, { "age": 20, "weight": 4 }],
+    "text": "Time to declare a major. You picked something that sounded interesting. Your parents asked about job prospects.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "changing-major",
+    "schedule": [{ "age": 19, "weight": 3 }, { "age": 20, "weight": 4 }],
+    "text": "You changed your major. Again. The advisor sighed but signed the paperwork.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "college-club",
+    "schedule": [
+      { "age": 18, "weight": 4 },
+      { "age": 19, "weight": 5 },
+      { "age": 20, "weight": 4 }
+    ],
+    "text": "You joined a club. Free pizza at meetings, actual friends as a bonus.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "professor-office-hours",
+    "schedule": [
+      { "age": 19, "weight": 3 },
+      { "age": 20, "weight": 4 },
+      { "age": 21, "weight": 3 }
+    ],
+    "text": "You finally went to office hours. The professor was surprisingly human.",
+    "conditions": [{ "INT": { "min": 5 } }],
+    "effects": { "INT": 1 },
+    "weight": 4
+  },
+  {
+    "id": "failed-exam",
+    "schedule": [
+      { "age": 19, "weight": 3 },
+      { "age": 20, "weight": 4 },
+      { "age": 21, "weight": 3 }
+    ],
+    "text": "You bombed an exam. The curve didn't save you. Life went on anyway.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "college-party",
+    "schedule": [
+      { "age": 18, "weight": 4 },
+      { "age": 19, "weight": 5 },
+      { "age": 20, "weight": 4 }
+    ],
+    "text": "Your first real college party. The music was too loud, but you felt like you belonged.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "library-regular",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 4 }
+    ],
+    "text": "You have a favorite spot in the library. The chair is uncomfortable, but it's yours.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "instant-noodle-diet",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 4 }
+    ],
+    "text": "You've eaten instant noodles for the fifth day in a row. Your body is 60% MSG now.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "study-group",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 4 }
+    ],
+    "text": "You formed a study group. Half the time was actual studying. The other half was complaining about the professor.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "college-heartbreak",
+    "schedule": [
+      { "age": 19, "weight": 3 },
+      { "age": 20, "weight": 4 },
+      { "age": 21, "weight": 3 }
+    ],
+    "text": "Your college relationship ended. You listened to sad music and overshared with your roommate.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "finals-week",
+    "schedule": [
+      { "age": 19, "weight": 5 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 5 }
+    ],
+    "text": "Finals week. The library is packed at 3 AM. Everyone looks haunted. You are one of them.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "summer-break-home",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 4 }
+    ],
+    "text": "Back home for summer. Your bed feels smaller, your room feels foreign, but mom's cooking hits different.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "internship-search",
+    "schedule": [
+      { "age": 20, "weight": 4 },
+      { "age": 21, "weight": 5 }
+    ],
+    "text": "Internship application season. You rewrote your resume twelve times and still feel underqualified.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "first-internship",
+    "schedule": [
+      { "age": 20, "weight": 3 },
+      { "age": 21, "weight": 4 }
+    ],
+    "text": "Your first internship. You made coffee, attended meetings you didn't understand, and called it 'experience'.",
+    "conditions": [{ "INT": { "min": 5 } }],
+    "effects": { "MNY": 1 },
+    "weight": 4
+  },
+  {
+    "id": "senior-thesis",
+    "schedule": [{ "age": 21, "weight": 4 }, { "age": 22, "weight": 4 }],
+    "text": "Senior thesis. You became an expert on something nobody else cares about. Worth it anyway.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "INT": 1 },
+    "weight": 4
+  },
+  {
+    "id": "graduation-anxiety",
+    "schedule": [{ "age": 21, "weight": 4 }, { "age": 22, "weight": 5 }],
+    "text": "Graduation is approaching. Everyone asks about your plans. You smile and change the subject.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "college-graduation",
+    "schedule": [{ "age": 21, "weight": 4 }, { "age": 22, "weight": 5 }],
+    "text": "You tossed your cap in the air. Four years compressed into a single ceremony. Now what?",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "college-debt",
+    "schedule": [{ "age": 22, "weight": 4 }, { "age": 23, "weight": 4 }],
+    "text": "The first student loan statement arrived. The number had more digits than expected.",
+    "conditions": [{ "MNY": { "max": 5 } }],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "drunk-lecture",
+    "schedule": [
+      { "age": 19, "weight": 3 },
+      { "age": 20, "weight": 3 }
+    ],
+    "text": "You showed up to a 9 AM lecture still hungover. You understood nothing but survived.",
+    "conditions": [],
+    "effects": {},
+    "weight": 3
+  },
+  {
+    "id": "college-friendship",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 4 }
+    ],
+    "text": "You made a friend who actually gets you. Late night conversations about everything and nothing.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "laundry-disaster",
+    "schedule": [{ "age": 18, "weight": 4 }, { "age": 19, "weight": 3 }],
+    "text": "You turned all your white clothes pink. Mom was right about separating colors.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "field-trip-fee",
+    "schedule": [
+      { "age": 7, "weight": 3 },
+      { "age": 8, "weight": 3 },
+      { "age": 9, "weight": 2 }
+    ],
+    "text": "The class is going to the Science Museum, but the fee is hard for your family to cover.",
+    "conditions": [{ "MNY": { "max": 2 } }],
+    "effects": { "SPR": -1, "INT": -1 },
+    "weight": 3
+  },
+  {
+    "id": "library-card",
+    "schedule": [
+      { "age": 8, "weight": 4 },
+      { "age": 9, "weight": 5 },
+      { "age": 10, "weight": 3 }
+    ],
+    "text": "You got your first library card. The world just got bigger.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "loose-tooth",
+    "schedule": [
+      { "age": 6, "weight": 5 },
+      { "age": 7, "weight": 4 }
+    ],
+    "text": "Your first tooth fell out during lunch. The Tooth Fairy left money under your pillow.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "first-pet",
+    "schedule": [
+      { "age": 6, "weight": 3 },
+      { "age": 7, "weight": 3 },
+      { "age": 8, "weight": 2 }
+    ],
+    "text": "You got a pet goldfish. You promised to feed it every day. You forgot within a week.",
+    "conditions": [],
+    "effects": {},
+    "weight": 3
+  },
+  {
+    "id": "swimming-lessons",
+    "schedule": [
+      { "age": 6, "weight": 4 },
+      { "age": 7, "weight": 4 },
+      { "age": 8, "weight": 3 }
+    ],
+    "text": "Swimming lessons at the community pool. You learned to float on your back.",
+    "conditions": [],
+    "effects": { "STR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "multiplication-tables",
+    "schedule": [
+      { "age": 7, "weight": 5 },
+      { "age": 8, "weight": 4 }
+    ],
+    "text": "You memorized the multiplication tables. 7x8 still trips you up sometimes.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "school-play",
+    "schedule": [
+      { "age": 8, "weight": 4 },
+      { "age": 9, "weight": 4 },
+      { "age": 10, "weight": 3 }
+    ],
+    "text": "You had one line in the school play. You practiced it 500 times and still stumbled on stage.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "first-sleepover",
+    "schedule": [
+      { "age": 8, "weight": 4 },
+      { "age": 9, "weight": 5 }
+    ],
+    "text": "Your first sleepover at a friend's house. You stayed up past midnight and felt invincible.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "science-fair",
+    "schedule": [
+      { "age": 10, "weight": 4 },
+      { "age": 11, "weight": 4 }
+    ],
+    "text": "You built a volcano for the science fair. It erupted perfectly and got vinegar on the judge's shirt.",
+    "conditions": [],
+    "effects": { "INT": 1 },
+    "weight": 4
+  },
+  {
+    "id": "first-allowance",
+    "schedule": [
+      { "age": 9, "weight": 4 },
+      { "age": 10, "weight": 4 }
+    ],
+    "text": "You started getting a weekly allowance. You spent it all on candy immediately.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "spelling-bee",
+    "schedule": [
+      { "age": 10, "weight": 3 },
+      { "age": 11, "weight": 3 }
+    ],
+    "text": "You made it to the third round of the spelling bee before misspelling 'necessary'.",
+    "conditions": [],
+    "effects": {},
+    "weight": 3
+  },
+  {
+    "id": "broken-arm",
+    "schedule": [
+      { "age": 9, "weight": 2 },
+      { "age": 10, "weight": 2 },
+      { "age": 11, "weight": 2 }
+    ],
+    "text": "You broke your arm doing something dumb. Everyone signed your cast.",
+    "conditions": [],
+    "effects": { "STR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "first-phone",
+    "schedule": [
+      { "age": 11, "weight": 4 },
+      { "age": 12, "weight": 5 }
+    ],
+    "text": "You got your first phone. It was a hand-me-down, but you felt like you'd joined the modern world.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "summer-camp",
+    "schedule": [
+      { "age": 10, "weight": 4 },
+      { "age": 11, "weight": 4 },
+      { "age": 12, "weight": 3 }
+    ],
+    "text": "Summer camp! Mosquito bites, campfire songs, and friendships that lasted exactly two weeks.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "lunch-shame",
+    "schedule": [
+      { "age": 10, "weight": 2 },
+      { "age": 11, "weight": 3 },
+      { "age": 12, "weight": 3 }
+    ],
+    "text": "You try to hide your free-lunch ticket so the other kids won't tease you.",
+    "conditions": [{ "talents": ["scrappy"] }],
+    "effects": { "SPR": -1, "CHR": -1 },
+    "weight": 3
+  },
+
+  {
+    "id": "digital-divide-hw",
+    "schedule": [
+      { "age": 12, "weight": 2 },
+      { "age": 13, "weight": 3 },
+      { "age": 14, "weight": 2 }
+    ],
+    "text": "Your home internet is down again. You sit outside a cafe to upload your homework.",
+    "conditions": [{ "talents": ["analog-soul"] }],
+    "effects": { "INT": -1, "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "puberty-hit",
+    "schedule": [
+      { "age": 13, "weight": 4 },
+      { "age": 14, "weight": 6 }
+    ],
+    "text": "You grew three inches over the summer and your voice cracked.",
+    "conditions": [],
+    "effects": { "STR": 1 },
+    "weight": 6
+  },
+  {
+    "id": "first-heartbreak",
+    "schedule": [
+      { "age": 13, "weight": 3 },
+      { "age": 14, "weight": 4 },
+      { "age": 15, "weight": 3 }
+    ],
+    "text": "Your crush liked someone else. You listened to sad songs on repeat for a week.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "acne-phase",
+    "schedule": [
+      { "age": 13, "weight": 5 },
+      { "age": 14, "weight": 5 },
+      { "age": 15, "weight": 4 }
+    ],
+    "text": "The acne arrived without warning. You tried every cream in the pharmacy.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "group-project-nightmare",
+    "schedule": [
+      { "age": 12, "weight": 4 },
+      { "age": 13, "weight": 4 },
+      { "age": 14, "weight": 4 }
+    ],
+    "text": "Group project. You did all the work. Everyone got the same grade.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "cram-school-envy",
+    "schedule": [
+      { "age": 15, "weight": 4 },
+      { "age": 16, "weight": 3 }
+    ],
+    "text": "Your friends are at expensive tutoring camps. You study alone in your room.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "first-crush",
+    "schedule": [
+      { "age": 15, "weight": 3 },
+      { "age": 16, "weight": 6 },
+      { "age": 17, "weight": 3 }
+    ],
+    "text": "You spent all day overthinking a text message you sent to your crush.",
+    "conditions": [],
+    "effects": { "SPR": -1, "CHR": 1 },
+    "weight": 6
+  },
+  {
+    "id": "college-counselor-bias",
+    "schedule": [
+      { "age": 17, "weight": 2 },
+      { "age": 18, "weight": 2 }
+    ],
+    "text": "The guidance counselor suggests a trade school, despite your high grades.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "SPR": -1 },
+    "weight": 2,
+    "branches": [
+      {
+        "id": "prove-them-wrong",
+        "text": "You apply to university anyway, fueled by spite.",
+        "conditions": [{ "talents": ["thick-skin"] }],
+        "effects": { "INT": 1, "SPR": 1 }
+      }
+    ]
+  },
+  {
+    "id": "graduation-day",
+    "text": "High school is over. The future is wide open.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 8
+  },
+  {
+    "id": "drivers-license",
+    "schedule": [
+      { "age": 16, "weight": 4 },
+      { "age": 17, "weight": 5 },
+      { "age": 18, "weight": 4 }
+    ],
+    "text": "You passed your driving test on the second try. Freedom on four wheels.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "part-time-job",
+    "schedule": [
+      { "age": 16, "weight": 4 },
+      { "age": 17, "weight": 5 }
+    ],
+    "text": "First part-time job. You learned that minimum wage feels even more minimum after taxes.",
+    "conditions": [],
+    "effects": { "MNY": 1 },
+    "weight": 5
+  },
+  {
+    "id": "senior-prom",
+    "schedule": [{ "age": 17, "weight": 5 }, { "age": 18, "weight": 5 }],
+    "text": "Prom night. Awkward photos, rented clothes, and memories that seemed bigger than they were.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+
+  {
+    "id": "unpaid-internship",
+    "schedule": [
+      { "age": 19, "weight": 3 },
+      { "age": 20, "weight": 4 },
+      { "age": 21, "weight": 2 }
+    ],
+    "text": "A prestigious firm offers an internship, but it pays $0. You can't afford to take it.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "INT": -1, "MNY": 1 },
+    "weight": 4
+  },
+  {
+    "id": "gig-economy",
+    "schedule": [
+      { "age": 19, "weight": 4 },
+      { "age": 20, "weight": 5 },
+      { "age": 21, "weight": 5 }
+    ],
+    "text": "You deliver food on your bike between classes to make rent.",
+    "conditions": [],
+    "effects": { "MNY": 1, "STR": 1, "INT": -1 },
+    "weight": 5
+  },
+  {
+    "id": "resume-bias",
+    "schedule": [
+      { "age": 22, "weight": 3 },
+      { "age": 23, "weight": 3 },
+      { "age": 25, "weight": 2 }
+    ],
+    "text": "You sent 50 resumes. A friend suggests changing your name to sound more 'traditional'.",
+    "conditions": [{ "CHR": { "max": 4 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "tech-bootcamp",
+    "schedule": [
+      { "age": 22, "weight": 2 },
+      { "age": 23, "weight": 2 },
+      { "age": 24, "weight": 2 }
+    ],
+    "text": "You got into a coding bootcamp designed for underrepresented groups.",
+    "conditions": [{ "INT": { "min": 5 } }],
+    "effects": { "INT": 1 },
+    "weight": 2
+  },
+  {
+    "id": "office-happy-hour",
+    "schedule": [
+      { "age": 24, "weight": 5 },
+      { "age": 25, "weight": 6 },
+      { "age": 26, "weight": 4 }
+    ],
+    "text": "You bonded with colleagues over cheap drinks.",
+    "conditions": [],
+    "effects": { "CHR": 1, "MNY": -1 },
+    "weight": 6
+  },
+  {
+    "id": "gentrification-rent",
+    "schedule": [
+      { "age": 26, "weight": 4 },
+      { "age": 27, "weight": 4 },
+      { "age": 28, "weight": 3 }
+    ],
+    "text": "A trendy coffee shop opened downstairs. Your landlord immediately raised the rent.",
+    "conditions": [],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "wedding-season",
+    "schedule": [
+      { "age": 27, "weight": 3 },
+      { "age": 28, "weight": 5 },
+      { "age": 29, "weight": 4 }
+    ],
+    "text": "Five weddings in one year. Your savings are obliterated.",
+    "conditions": [],
+    "effects": { "MNY": -1 },
+    "weight": 5
+  },
+
+  {
+    "id": "glass-ceiling",
+    "schedule": [
+      { "age": 30, "weight": 3 },
+      { "age": 31, "weight": 3 },
+      { "age": 32, "weight": 3 }
+    ],
+    "text": "You were passed over for promotion in favor of the boss's golf buddy.",
+    "conditions": [{ "talents": ["scrappy"] }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "medical-scare",
+    "schedule": [
+      { "age": 33, "weight": 2 },
+      { "age": 34, "weight": 2 },
+      { "age": 35, "weight": 3 },
+      { "age": 36, "weight": 2 }
+    ],
+    "text": "You have a weird pain, but your insurance deductible is too high to see a specialist.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": { "STR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "side-hustle-success",
+    "schedule": [
+      { "age": 34, "weight": 1 },
+      { "age": 35, "weight": 2 },
+      { "age": 36, "weight": 2 },
+      { "age": 37, "weight": 2 },
+      { "age": 38, "weight": 2 }
+    ],
+    "text": "Your weekend project finally started making real money.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "MNY": 1 },
+    "weight": 2
+  },
+  {
+    "id": "sandwich-generation",
+    "schedule": [
+      { "age": 39, "weight": 3 },
+      { "age": 40, "weight": 4 },
+      { "age": 41, "weight": 4 },
+      { "age": 42, "weight": 4 }
+    ],
+    "text": "You are caring for aging parents and young children at the same time.",
+    "conditions": [],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "community-pillar",
+    "schedule": [
+      { "age": 43, "weight": 2 },
+      { "age": 44, "weight": 3 },
+      { "age": 45, "weight": 3 },
+      { "age": 46, "weight": 3 }
+    ],
+    "text": "You organized a neighborhood watch and cleaned up the local park.",
+    "conditions": [{ "CHR": { "min": 5 } }],
+    "effects": { "CHR": 1, "SPR": 1 },
+    "weight": 3
+  },
+
+  {
+    "id": "ageism-hiring",
+    "schedule": [
+      { "age": 47, "weight": 2 },
+      { "age": 48, "weight": 2 },
+      { "age": 49, "weight": 3 },
+      { "age": 50, "weight": 3 },
+      { "age": 51, "weight": 3 },
+      { "age": 52, "weight": 3 }
+    ],
+    "text": "During an interview, they asked if you could 'keep up with the fast pace'.",
+    "conditions": [],
+    "effects": { "SPR": -1, "CHR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "digital-banking",
+    "schedule": [
+      { "age": 53, "weight": 2 },
+      { "age": 54, "weight": 2 },
+      { "age": 55, "weight": 3 },
+      { "age": 56, "weight": 3 },
+      { "age": 57, "weight": 3 },
+      { "age": 58, "weight": 3 }
+    ],
+    "text": "The local bank branch closed. You struggle with the confusing mobile app.",
+    "conditions": [{ "talents": ["analog-soul"] }],
+    "effects": { "INT": -1, "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "garden-zen",
+    "schedule": [
+      { "age": 58, "weight": 4 },
+      { "age": 59, "weight": 5 },
+      { "age": 60, "weight": 5 }
+    ],
+    "text": "You grew the perfect tomato. Life is good.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "first-apartment",
+    "schedule": [
+      { "age": 22, "weight": 4 },
+      { "age": 23, "weight": 5 },
+      { "age": 24, "weight": 4 }
+    ],
+    "text": "You signed your first lease. The place is tiny, but it's yours.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "imposter-syndrome",
+    "schedule": [
+      { "age": 23, "weight": 4 },
+      { "age": 24, "weight": 5 },
+      { "age": 25, "weight": 4 }
+    ],
+    "text": "Everyone at work seems to know what they're doing. You're pretty sure you're faking it.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "quarter-life-crisis",
+    "schedule": [
+      { "age": 25, "weight": 4 },
+      { "age": 26, "weight": 5 },
+      { "age": 27, "weight": 4 }
+    ],
+    "text": "You lie awake wondering if this is really what you want to do with your life.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "first-real-vacation",
+    "schedule": [
+      { "age": 26, "weight": 3 },
+      { "age": 27, "weight": 4 },
+      { "age": 28, "weight": 4 }
+    ],
+    "text": "You finally took a real vacation. The out-of-office reply felt like freedom.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "friend-moves-away",
+    "schedule": [
+      { "age": 25, "weight": 3 },
+      { "age": 26, "weight": 4 },
+      { "age": 27, "weight": 4 },
+      { "age": 28, "weight": 3 }
+    ],
+    "text": "Your best friend moved to another city for a job. You promised to visit but life got busy.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "gym-membership",
+    "schedule": [
+      { "age": 27, "weight": 3 },
+      { "age": 28, "weight": 4 },
+      { "age": 29, "weight": 4 }
+    ],
+    "text": "You signed up for a gym. You went three times in January, then never again.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "pet-adoption",
+    "schedule": [
+      { "age": 28, "weight": 3 },
+      { "age": 29, "weight": 4 },
+      { "age": 30, "weight": 4 }
+    ],
+    "text": "You adopted a cat. It ignores you completely, but you've never felt less alone.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "promotion-finally",
+    "schedule": [
+      { "age": 29, "weight": 3 },
+      { "age": 30, "weight": 4 },
+      { "age": 31, "weight": 4 },
+      { "age": 32, "weight": 3 }
+    ],
+    "text": "You finally got promoted. The raise was smaller than expected, but the title felt good.",
+    "conditions": [{ "INT": { "min": 5 } }],
+    "effects": { "MNY": 1 },
+    "weight": 4
+  },
+  {
+    "id": "back-pain-starts",
+    "schedule": [
+      { "age": 30, "weight": 3 },
+      { "age": 31, "weight": 4 },
+      { "age": 32, "weight": 4 }
+    ],
+    "text": "Your back hurts now. You're not sure when that started.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "high-school-reunion",
+    "schedule": [
+      { "age": 28, "weight": 3 },
+      { "age": 38, "weight": 3 }
+    ],
+    "text": "High school reunion. Everyone looked older but acted the same.",
+    "conditions": [],
+    "effects": {},
+    "weight": 3
+  },
+  {
+    "id": "first-child",
+    "schedule": [
+      { "age": 29, "weight": 3 },
+      { "age": 30, "weight": 4 },
+      { "age": 31, "weight": 4 },
+      { "age": 32, "weight": 3 }
+    ],
+    "text": "Your first child was born. Sleep became a distant memory.",
+    "conditions": [],
+    "effects": { "SPR": 1, "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "mortgage-approved",
+    "schedule": [
+      { "age": 31, "weight": 3 },
+      { "age": 32, "weight": 4 },
+      { "age": 33, "weight": 4 }
+    ],
+    "text": "You got approved for a mortgage. You're now in debt for 30 years, but at least it's yours.",
+    "conditions": [{ "MNY": { "min": 4 } }],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "kid-first-steps",
+    "schedule": [
+      { "age": 31, "weight": 3 },
+      { "age": 32, "weight": 4 },
+      { "age": 33, "weight": 3 }
+    ],
+    "text": "Your kid took their first steps. You forgot every sleepless night instantly.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "daycare-costs",
+    "schedule": [
+      { "age": 32, "weight": 4 },
+      { "age": 33, "weight": 4 },
+      { "age": 34, "weight": 3 }
+    ],
+    "text": "Daycare costs more than rent. You briefly consider quitting your job.",
+    "conditions": [],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "career-plateau",
+    "schedule": [
+      { "age": 35, "weight": 3 },
+      { "age": 36, "weight": 4 },
+      { "age": 37, "weight": 4 }
+    ],
+    "text": "You've been doing the same job for years. The ceiling feels lower than it used to.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "parent-sick",
+    "schedule": [
+      { "age": 36, "weight": 3 },
+      { "age": 37, "weight": 3 },
+      { "age": 38, "weight": 4 }
+    ],
+    "text": "Your parent got sick. Suddenly they seem much older than you remembered.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "kid-starts-school",
+    "schedule": [
+      { "age": 35, "weight": 3 },
+      { "age": 36, "weight": 4 },
+      { "age": 37, "weight": 3 }
+    ],
+    "text": "Your kid started school. You cried more than they did.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "reading-glasses",
+    "schedule": [
+      { "age": 42, "weight": 4 },
+      { "age": 43, "weight": 5 },
+      { "age": 44, "weight": 4 }
+    ],
+    "text": "You needed reading glasses. The eye doctor said it happens to everyone.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "midlife-hobby",
+    "schedule": [
+      { "age": 40, "weight": 3 },
+      { "age": 41, "weight": 4 },
+      { "age": 42, "weight": 4 }
+    ],
+    "text": "You picked up a new hobby. Everyone said it was a midlife crisis, but you don't care.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "teenager-drama",
+    "schedule": [
+      { "age": 43, "weight": 4 },
+      { "age": 44, "weight": 5 },
+      { "age": 45, "weight": 4 }
+    ],
+    "text": "Your kid became a teenager. Suddenly you know nothing and everything is embarrassing.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "knee-problems",
+    "schedule": [
+      { "age": 45, "weight": 3 },
+      { "age": 46, "weight": 4 },
+      { "age": 47, "weight": 4 }
+    ],
+    "text": "Your knee started making a clicking sound. You pretend not to notice.",
+    "conditions": [],
+    "effects": { "STR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "empty-nest-approaching",
+    "schedule": [
+      { "age": 48, "weight": 3 },
+      { "age": 49, "weight": 4 },
+      { "age": 50, "weight": 4 }
+    ],
+    "text": "Your kid is applying to colleges. The house will be quiet soon.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "health-checkup-scare",
+    "schedule": [
+      { "age": 48, "weight": 3 },
+      { "age": 49, "weight": 3 },
+      { "age": 50, "weight": 4 }
+    ],
+    "text": "The doctor found something in your routine checkup. More tests needed. You didn't sleep for a week.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "health-checkup-clear",
+    "schedule": [
+      { "age": 49, "weight": 3 },
+      { "age": 50, "weight": 4 },
+      { "age": 51, "weight": 3 }
+    ],
+    "text": "The test results came back fine. You promised yourself you'd eat better. You meant it this time.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "kid-graduates",
+    "schedule": [
+      { "age": 50, "weight": 3 },
+      { "age": 51, "weight": 4 },
+      { "age": 52, "weight": 3 }
+    ],
+    "text": "Your kid graduated. You took too many photos and cried in public.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "empty-nest",
+    "schedule": [
+      { "age": 50, "weight": 3 },
+      { "age": 51, "weight": 4 },
+      { "age": 52, "weight": 4 }
+    ],
+    "text": "The house is quiet now. You're not sure what to do with all this space.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "reconnect-spouse",
+    "schedule": [
+      { "age": 52, "weight": 3 },
+      { "age": 53, "weight": 4 },
+      { "age": 54, "weight": 4 }
+    ],
+    "text": "With the kids gone, you and your partner actually talked. Like really talked.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "parent-passes",
+    "schedule": [
+      { "age": 50, "weight": 2 },
+      { "age": 55, "weight": 3 },
+      { "age": 60, "weight": 3 }
+    ],
+    "text": "Your parent passed away. You're now the oldest generation.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "early-retirement-dream",
+    "schedule": [
+      { "age": 54, "weight": 3 },
+      { "age": 55, "weight": 4 },
+      { "age": 56, "weight": 3 }
+    ],
+    "text": "You started calculating if you could retire early. The spreadsheet said no.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "mentoring-young-colleague",
+    "schedule": [
+      { "age": 50, "weight": 3 },
+      { "age": 51, "weight": 3 },
+      { "age": 52, "weight": 3 }
+    ],
+    "text": "A young colleague asked for your advice. You felt ancient, but also useful.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "first-grandchild",
+    "schedule": [
+      { "age": 55, "weight": 3 },
+      { "age": 56, "weight": 4 },
+      { "age": 57, "weight": 4 },
+      { "age": 58, "weight": 3 }
+    ],
+    "text": "Your first grandchild was born. All the best parts of parenting, none of the midnight feedings.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "retirement-party",
+    "schedule": [
+      { "age": 60, "weight": 3 },
+      { "age": 61, "weight": 4 },
+      { "age": 62, "weight": 4 },
+      { "age": 63, "weight": 3 }
+    ],
+    "text": "They threw you a retirement party. The cake was bad, but the speeches made you cry.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "retirement-boredom",
+    "schedule": [
+      { "age": 62, "weight": 3 },
+      { "age": 63, "weight": 4 },
+      { "age": 64, "weight": 4 }
+    ],
+    "text": "Retirement is boring. You've watched everything on TV and reorganized the garage twice.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "volunteer-work",
+    "schedule": [
+      { "age": 63, "weight": 3 },
+      { "age": 64, "weight": 4 },
+      { "age": 65, "weight": 4 }
+    ],
+    "text": "You started volunteering. Turns out having a purpose matters more than having a salary.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "senior-discount",
+    "schedule": [
+      { "age": 60, "weight": 4 },
+      { "age": 61, "weight": 5 }
+    ],
+    "text": "You got the senior discount without asking. Mixed feelings.",
+    "conditions": [],
+    "effects": {},
+    "weight": 5
+  },
+  {
+    "id": "grandkid-visit",
+    "schedule": [
+      { "age": 60, "weight": 3 },
+      { "age": 65, "weight": 4 },
+      { "age": 70, "weight": 4 }
+    ],
+    "text": "The grandkids visited. You spoiled them rotten and sent them home hyper.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "old-friend-reconnect",
+    "schedule": [
+      { "age": 58, "weight": 3 },
+      { "age": 59, "weight": 3 },
+      { "age": 60, "weight": 4 }
+    ],
+    "text": "You reconnected with an old friend. Fifty years vanished in five minutes.",
+    "conditions": [],
+    "effects": { "CHR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "hip-replacement",
+    "schedule": [
+      { "age": 65, "weight": 2 },
+      { "age": 66, "weight": 3 },
+      { "age": 67, "weight": 3 }
+    ],
+    "text": "You got a hip replacement. The recovery was hard, but you can walk without pain again.",
+    "conditions": [],
+    "effects": { "STR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "downsizing",
+    "schedule": [
+      { "age": 65, "weight": 3 },
+      { "age": 66, "weight": 4 },
+      { "age": 67, "weight": 3 }
+    ],
+    "text": "You sold the house and moved somewhere smaller. Too many memories to pack.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "golden-anniversary",
+    "schedule": [
+      { "age": 70, "weight": 3 },
+      { "age": 72, "weight": 3 },
+      { "age": 75, "weight": 3 }
+    ],
+    "text": "Fifty years married. You've forgotten more arguments than most people have.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "tech-confusion",
+    "schedule": [
+      { "age": 68, "weight": 4 },
+      { "age": 70, "weight": 4 },
+      { "age": 72, "weight": 4 }
+    ],
+    "text": "Your grandkid had to show you how to use your phone. Again.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "morning-routine",
+    "schedule": [
+      { "age": 70, "weight": 4 },
+      { "age": 72, "weight": 4 },
+      { "age": 74, "weight": 4 }
+    ],
+    "text": "You wake up at 5am every day now. Not by choice, just how it is.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "photo-albums",
+    "schedule": [
+      { "age": 72, "weight": 3 },
+      { "age": 74, "weight": 4 },
+      { "age": 76, "weight": 4 }
+    ],
+    "text": "You spent the afternoon looking at old photo albums. Everyone looked so young.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "great-grandchild",
+    "schedule": [
+      { "age": 75, "weight": 3 },
+      { "age": 78, "weight": 4 },
+      { "age": 80, "weight": 3 }
+    ],
+    "text": "Your first great-grandchild was born. Four generations now.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "daily-walk",
+    "schedule": [
+      { "age": 70, "weight": 4 },
+      { "age": 75, "weight": 4 },
+      { "age": 80, "weight": 3 }
+    ],
+    "text": "Your daily walk is shorter than it used to be. But you still go.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "outlived-friends",
+    "schedule": [
+      { "age": 78, "weight": 3 },
+      { "age": 80, "weight": 4 },
+      { "age": 82, "weight": 4 }
+    ],
+    "text": "Another friend passed. You're running out of people who remember the old days.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "peaceful-morning",
+    "schedule": [
+      { "age": 75, "weight": 4 },
+      { "age": 78, "weight": 4 },
+      { "age": 80, "weight": 5 }
+    ],
+    "text": "You sat on the porch with a cup of tea and watched the sunrise. That was enough.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 5
+  },
+  {
+    "id": "counseling-packaging",
+    "schedule": [
+      { "age": 17, "weight": 3 },
+      { "age": 18, "weight": 3 }
+    ],
+    "text": "The 100,000 RMB consultant says your profile is too boring. They force you to fly to a remote village to 'teach English' for a week just to take photos for your resume.",
+    "conditions": [
+      { "MNY": { "min": 5 } },
+      { "STR": { "min": 3 } }
+    ],
+    "effects": {
+      "CHR": 1
+    }
+  },
+  {
+    "id": "counseling-scam-reveal",
+    "schedule": [
+      { "age": 18, "weight": 2 }
+    ],
+    "text": "You discover that your expensive counselor just used a ChatGPT to write your 'Personal Statement.' When you confront them, they block you on WeChat. The money is gone.",
+    "conditions": [
+      { "INT": { "min": 6 } },
+      { "MNY": { "min": 4 } }
+    ],
+    "effects": {
+      "SPR": -1
+    }
+  },
+  {
+    "id": "hukou-hurdle",
+    "schedule": [
+      { "age": 6, "weight": 10 }
+    ],
+    "text": "Because your family lacks the local 'Hukou' (residency permit), you cannot attend the well-funded public school nearby.",
+    "conditions": [{ "MNY": { "max": 2 } }],
+    "effects": { "SPR": -1 },
+    "weight": 10
+  },
+  {
+    "id": "left-behind",
+    "schedule": [
+      { "age": 4, "weight": 3 },
+      { "age": 5, "weight": 3 },
+      { "age": 6, "weight": 3 }
+    ],
+    "text": "Your parents work in a factory in Guangdong. You only see them during Lunar New Year. Grandma raises you.",
+    "conditions": [{ "MNY": { "max": 2 } }],
+    "effects": { "SPR": -1, "STR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "kindergarten-interview",
+    "schedule": [
+      { "age": 3, "weight": 5 }
+    ],
+    "text": "The international kindergarten requires an interview. Your mom coached you for weeks to say 'Apple' correctly.",
+    "conditions": [{ "MNY": { "min": 6 } }],
+    "effects": { "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "young-pioneer",
+    "schedule": [
+      { "age": 7, "weight": 8 }
+    ],
+    "text": "You put on the Red Scarf for the first time. The teacher says it is dyed with the blood of martyrs.",
+    "conditions": [],
+    "effects": { "SPR": 1 },
+    "weight": 8
+  },
+  {
+    "id": "eye-exercises",
+    "schedule": [
+      { "age": 8, "weight": 2 },
+      { "age": 10, "weight": 2 },
+      { "age": 12, "weight": 2 }
+    ],
+    "text": "The loudspeaker blares 'Protected Eyesight, Eye Exercises begin.' You press your thumbs against your temples mechanically.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "seat-arrangement",
+    "schedule": [
+      { "age": 9, "weight": 3 },
+      { "age": 10, "weight": 3 }
+    ],
+    "text": "The teacher moved you to the back row, near the trash can, because your grades dropped.",
+    "conditions": [{ "INT": { "max": 4 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "red-packet-politics",
+    "schedule": [
+      { "age": 9, "weight": 3 },
+      { "age": 10, "weight": 3 }
+    ],
+    "text": "Your mom gave the Homeroom Teacher a 'gift card' for Mid-Autumn Festival. Suddenly, you are appointed Class Monitor.",
+    "conditions": [{ "MNY": { "min": 5 } }],
+    "effects": { "CHR": 1, "MNY": -1 },
+    "weight": 3
+  },
+  {
+    "id": "math-olympiad",
+    "schedule": [
+      { "age": 10, "weight": 4 },
+      { "age": 11, "weight": 4 }
+    ],
+    "text": "While other kids play, you spend weekends at 'Aoshu' (Math Olympiad) cram schools to boost your middle school chances.",
+    "conditions": [{ "MNY": { "min": 4 } }],
+    "effects": { "INT": 1, "STR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "nutrition-lunch-scandal",
+    "schedule": [
+      { "age": 11, "weight": 3 },
+      { "age": 12, "weight": 3 }
+    ],
+    "text": "The school cafeteria food tastes sour. News breaks that the contractor was using expired meat to save money.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "STR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "uniform-shame",
+    "schedule": [
+      { "age": 13, "weight": 3 },
+      { "age": 14, "weight": 3 }
+    ],
+    "text": "Your giant blue sack-like uniform is secondhand and faded. The city kids have tailored ones.",
+    "conditions": [{ "MNY": { "max": 2 } }],
+    "effects": { "CHR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "middle-school-rankings",
+    "schedule": [
+      { "age": 13, "weight": 5 },
+      { "age": 14, "weight": 5 }
+    ],
+    "text": "The school posts everyone's exam scores on a giant red sheet in the hallway. You search for your name.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "zao-lian",
+    "schedule": [
+      { "age": 14, "weight": 4 },
+      { "age": 15, "weight": 4 }
+    ],
+    "text": "The Dean catches you holding hands with a classmate. You are forced to write a 'Self-Criticism' letter and read it to the school.",
+    "conditions": [{ "CHR": { "min": 4 } }],
+    "effects": { "SPR": -1, "CHR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "zhongkao-filter",
+    "schedule": [
+      { "age": 15, "weight": 10 }
+    ],
+    "text": "The High School Entrance Exam (Zhongkao). 50% of your classmates will be sent to vocational schools.",
+    "conditions": [],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 10
+  },
+  {
+    "id": "vocational-track",
+    "schedule": [
+      { "age": 16, "weight": 10 }
+    ],
+    "text": "You didn't make the cutoff for high school. You are sent to a vocational school to learn welding. The teachers don't really care.",
+    "conditions": [{ "INT": { "max": 4 } }],
+    "effects": { "INT": -1, "STR": 1 },
+    "weight": 10
+  },
+  {
+    "id": "key-school-pressure",
+    "schedule": [
+      { "age": 16, "weight": 5 },
+      { "age": 17, "weight": 5 }
+    ],
+    "text": "You got into a 'Key High School' (Zhongdian). The pressure is suffocating, but the university acceptance rate is 90%.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": { "SPR": -1, "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "english-accent",
+    "schedule": [
+      { "age": 16, "weight": 3 }
+    ],
+    "text": "Your English teacher mocks your rural accent. The classmates who spent summers in America snicker.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "CHR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "gaokao-factory",
+    "schedule": [
+      { "age": 17, "weight": 5 }
+    ],
+    "text": "Your school operates like a military camp. 6:00 AM wake up, 11:00 PM sleep. No hobbies, only test papers.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": { "STR": -1, "INT": 1 },
+    "weight": 5
+  },
+  {
+    "id": "study-abroad-option",
+    "schedule": [
+      { "age": 17, "weight": 3 }
+    ],
+    "text": "Your grades are mediocre, but your dad sells an apartment to send you to a university in Australia.",
+    "conditions": [
+      { "MNY": { "min": 8 } },
+      { "INT": { "max": 5 } }
+    ],
+    "effects": { "SPR": 1, "MNY": -1 },
+    "weight": 3
+  },
+  {
+    "id": "gaokao-day",
+    "schedule": [
+      { "age": 18, "weight": 10 }
+    ],
+    "text": "The National College Entrance Exam. Police block the roads. Millions of students fight to cross the 'single-plank bridge'.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 10
+  },
+  {
+    "id": "filling-volunteers",
+    "schedule": [
+      { "age": 18, "weight": 5 }
+    ],
+    "text": "You got a high score, but because you are from a populous province with few universities, the cutoff is higher for you.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "dorm-life-shock",
+    "schedule": [
+      { "age": 19, "weight": 4 }
+    ],
+    "text": "University dorm. 8 people in one room, no AC. Your roommates are from all over China.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "civil-service-craze",
+    "schedule": [
+      { "age": 21, "weight": 4 },
+      { "age": 22, "weight": 4 }
+    ],
+    "text": "Your parents beg you to take the Civil Service Exam (Guokao) for the 'Iron Rice Bowl'. Stability is everything.",
+    "conditions": [],
+    "effects": {},
+    "weight": 4
+  },
+  {
+    "id": "996-culture",
+    "schedule": [
+      { "age": 23, "weight": 5 },
+      { "age": 24, "weight": 5 }
+    ],
+    "text": "You landed a job at a big tech firm. 9am to 9pm, 6 days a week. The pay is good, but you haven't seen the sun in weeks.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "MNY": 1, "STR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "involution-burnout",
+    "schedule": [
+      { "age": 25, "weight": 4 },
+      { "age": 26, "weight": 4 }
+    ],
+    "text": "The competition is endless ('Neijuan'). You consider 'lying flat' (Tang Ping) and quitting your job to go back to your hometown.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "marriage-market",
+    "schedule": [
+      { "age": 27, "weight": 3 },
+      { "age": 28, "weight": 3 }
+    ],
+    "text": "Your parents put your resume on an umbrella at the People's Park matchmaking corner. They emphasize your height and salary.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "buying-property",
+    "schedule": [
+      { "age": 29, "weight": 4 },
+      { "age": 30, "weight": 4 }
+    ],
+    "text": "You need to buy an apartment to get married. The down payment requires the 'Six Wallets' of your parents and grandparents.",
+    "conditions": [],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "rural-left-behind",
+    "schedule": [{ "age": 3, "weight": 20 }],
+    "text": "Your parents packed huge bags and left for the city. You chased the bus crying until you fell. Grandma picked you up.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "rural-farm-help",
+    "schedule": [{ "age": 8, "weight": 20 }],
+    "text": "Harvest season. You skipped school to help shuck corn until your fingers bled.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "STR": 1, "INT": -1 },
+    "weight": 20
+  },
+  {
+    "id": "rural-dropout",
+    "schedule": [{ "age": 15, "weight": 20 }],
+    "text": "Grandpa is sick. The family needs money. You decide to quit school and follow your cousin to a factory in Dongguan.",
+    "conditions": [{ "talents": ["rural-hukou"] }, { "MNY": { "max": 3 } }],
+    "effects": { "INT": -1, "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "rural-factory-injury",
+    "schedule": [{ "age": 19, "weight": 20 }],
+    "text": "The stamping machine malfunctioned. You lost a finger. The boss gave you 500 RMB and told you to stop crying.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "STR": -1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "rural-medical-crisis",
+    "schedule": [{ "age": 45, "weight": 20 }],
+    "text": "You collapsed on the construction site. The ambulance came, but the hospital requires a massive deposit because you have no local insurance.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "MNY": -1 },
+    "weight": 20
+  },
+  {
+    "id": "rural-death",
+    "schedule": [{ "age": 55, "weight": 20 }],
+    "text": "Years of inhaling factory dust caught up with you. You passed away quietly in your rental room, dreaming of the village stream.",
+    "conditions": [{ "talents": ["rural-hukou"] }, { "STR": { "max": 3 } }],
+    "effects": {},
+    "weight": 20,
+    "death": true
+  },
+
+  {
+    "id": "urban-piano-lesson",
+    "schedule": [{ "age": 5, "weight": 20 }],
+    "text": "While other kids play in mud, you are forced to sit on a bench for 4 hours practicing scales. 'It's for your future,' Mom says.",
+    "conditions": [{ "talents": ["urban-hukou"] }],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "urban-study-tour",
+    "schedule": [{ "age": 12, "weight": 20 }],
+    "text": "Summer vacation! Your class went on a 'Study Tour' to the UK. You took a selfie with Big Ben.",
+    "conditions": [{ "talents": ["urban-hukou"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "urban-gap-year",
+    "schedule": [{ "age": 23, "weight": 20 }],
+    "text": "You didn't like your first job, so you quit to 'find yourself' in Tibet. Your parents paid the bills.",
+    "conditions": [{ "talents": ["urban-hukou"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "urban-property-gift",
+    "schedule": [{ "age": 28, "weight": 20 }],
+    "text": "Wedding gift! Your parents transferred the title of an old apartment to your name.",
+    "conditions": [{ "talents": ["urban-hukou"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "intl-bilingual-kindergarten",
+    "schedule": [{ "age": 3, "weight": 20 }, { "age": 4, "weight": 20 }],
+    "text": "Your parents enrolled you in a bilingual kindergarten. You learned to say 'apple' before '苹果'.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "INT": 1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-summer-camp-usa",
+    "schedule": [{ "age": 10, "weight": 20 }, { "age": 11, "weight": 20 }, { "age": 12, "weight": 20 }],
+    "text": "Summer camp in America! You improved your English, made friends from around the world, and discovered peanut butter.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-sat-prep",
+    "schedule": [{ "age": 15, "weight": 20 }, { "age": 16, "weight": 20 }],
+    "text": "SAT prep classes every weekend. Your vocabulary now includes words like 'ubiquitous' and 'paradigm' that you'll never use again.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-toefl-grind",
+    "schedule": [{ "age": 15, "weight": 15 }, { "age": 16, "weight": 20 }],
+    "text": "TOEFL practice tests every day. You dream in listening comprehension passages about campus bookstores.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": {},
+    "weight": 20
+  },
+  {
+    "id": "intl-essay-counselor",
+    "schedule": [{ "age": 17, "weight": 20 }],
+    "text": "Your college counselor helped you craft the perfect 'personal narrative'. You wrote about your grandmother's dumplings as a metaphor for cultural identity.",
+    "conditions": [{ "talents": ["international-track"] }, { "MNY": { "min": 5 } }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-early-decision",
+    "schedule": [{ "age": 17, "weight": 15 }],
+    "text": "November came. You submitted your early decision application and refreshed your email obsessively for weeks.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "intl-acceptance-letter",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "The email arrived. 'Congratulations!' Your mom cried. Your dad immediately posted on WeChat Moments.",
+    "conditions": [{ "talents": ["international-track"] }, { "INT": { "min": 7 } }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-rejection-pile",
+    "schedule": [{ "age": 18, "weight": 15 }],
+    "text": "Rejection after rejection. 'We regret to inform you...' became the most hated phrase in English.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "intl-visa-interview",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "F-1 visa interview at the US Embassy. You dressed formally, prepared every possible question, and got approved in 2 minutes.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": {},
+    "weight": 20
+  },
+  {
+    "id": "intl-airport-farewell",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "Your parents took you to the airport. Mom packed too many instant noodles in your luggage. You didn't look back at security.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-culture-shock",
+    "schedule": [{ "age": 19, "weight": 20 }],
+    "text": "Everything is different. The food, the humor, the social norms. You miss home but don't want to admit it.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-thanksgiving-alone",
+    "schedule": [{ "age": 19, "weight": 15 }, { "age": 20, "weight": 15 }],
+    "text": "Thanksgiving break. The dorms emptied out. You ate instant noodles and video-called your parents at 3 AM.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": {},
+    "weight": 15
+  },
+  {
+    "id": "intl-work-visa-stress",
+    "schedule": [{ "age": 22, "weight": 20 }, { "age": 23, "weight": 20 }],
+    "text": "H-1B lottery season. Your future in America depends on a random number generator. The anxiety is real.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "intl-return-home",
+    "schedule": [{ "age": 24, "weight": 15 }, { "age": 25, "weight": 15 }],
+    "text": "You moved back to China. 'Haigui' (sea turtle returnee) sounds prestigious, but readjusting is harder than expected.",
+    "conditions": [{ "talents": ["international-track"] }],
+    "effects": { "CHR": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "system-kindergarten",
+    "schedule": [{ "age": 4, "weight": 20 }],
+    "text": "You attend the 'Affiliated Kindergarten of the Bureau'. The food is organic, and the teachers are afraid of your dad.",
+    "conditions": [{ "talents": ["system-insider"] }],
+    "effects": { "STR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "system-internship",
+    "schedule": [{ "age": 21, "weight": 20 }],
+    "text": "You didn't even submit a resume. Your uncle made a call, and now you have a stamped internship certificate.",
+    "conditions": [{ "talents": ["system-insider"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "system-tea-drinking",
+    "schedule": [{ "age": 26, "weight": 20 }],
+    "text": "Your job consists of reading the newspaper and drinking tea. The 'Iron Rice Bowl' is boring but unbreakable.",
+    "conditions": [{ "talents": ["system-insider"] }],
+    "effects": { "STR": 1, "INT": -1 },
+    "weight": 20
+  },
+  {
+    "id": "system-welfare-housing",
+    "schedule": [{ "age": 30, "weight": 20 }],
+    "text": "The unit offered 'Internal Purchase Housing' at 30% of the market price.",
+    "conditions": [{ "talents": ["system-insider"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "migrant-school-closure",
+    "schedule": [{ "age": 9, "weight": 20 }],
+    "text": "Your private migrant school was deemed 'non-compliant' and demolished. You have nowhere to go for a month.",
+    "conditions": [{ "talents": ["migrant-roots"] }],
+    "effects": { "INT": -1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "migrant-dialect-mockery",
+    "schedule": [{ "age": 13, "weight": 20 }],
+    "text": "You tried to speak the local dialect to fit in, but the shopkeeper rolled her eyes at your accent.",
+    "conditions": [{ "talents": ["migrant-roots"] }],
+    "effects": { "CHR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "migrant-eviction",
+    "schedule": [{ "age": 24, "weight": 20 }],
+    "text": "The city is 'cleaning up the low-end population'. Your landlord kicked you out with 2 days notice.",
+    "conditions": [{ "talents": ["migrant-roots"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+
+  {
+    "id": "only-child-obesity",
+    "schedule": [{ "age": 6, "weight": 20 }],
+    "text": "Grandma stuffs you with pork belly every meal. You are the 'Little Emperor', and you are getting chubby.",
+    "conditions": [{ "talents": ["only-child"] }],
+    "effects": { "STR": -1, "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "only-child-hospital-burden",
+    "schedule": [{ "age": 35, "weight": 20 }],
+    "text": "Your father had a stroke. You are the only one who can sign the papers, pay the bills, and stay up all night.",
+    "conditions": [{ "talents": ["only-child"] }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 20
+  },
+
+  {
+    "id": "big-family-hand-me-downs",
+    "schedule": [{ "age": 7, "weight": 20 }],
+    "text": "You have never owned new clothes. Everything you wear belonged to your older cousin first.",
+    "conditions": [{ "talents": ["big-family"] }],
+    "effects": { "CHR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "big-family-sacrifice",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "You got into college! But your parents say they can only afford tuition for your younger brother.",
+    "conditions": [{ "talents": ["big-family"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+
+  {
+    "id": "keyboard-warrior-ban",
+    "schedule": [{ "age": 16, "weight": 15 }],
+    "text": "You spent 12 hours arguing on Tieba that salty tofu is better than sweet. Your account got banned for 'provoking trouble'.",
+    "conditions": [{ "talents": ["keyboard-warrior"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "keyboard-warrior-reality",
+    "schedule": [{ "age": 25, "weight": 15 }],
+    "text": "You insulted someone online. Turns out they know where you work. You got a warning from HR.",
+    "conditions": [{ "talents": ["keyboard-warrior"] }],
+    "effects": { "MNY": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "fish-touching-youth",
+    "schedule": [{ "age": 14, "weight": 15 }],
+    "text": "You cut a hole in your textbook to hide a comic book. The teacher is impressed by how focused you look.",
+    "conditions": [{ "talents": ["fish-touching-master"] }],
+    "effects": { "SPR": 1, "INT": -1 },
+    "weight": 15
+  },
+  {
+    "id": "fish-touching-pro",
+    "schedule": [{ "age": 26, "weight": 15 }],
+    "text": "You spent 4 hours in the office toilet watching Douyin. Your legs are numb, but you got paid for pooping.",
+    "conditions": [{ "talents": ["fish-touching-master"] }],
+    "effects": { "SPR": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "social-cow-cafeteria",
+    "schedule": [{ "age": 19, "weight": 15 }],
+    "text": "You called the cafeteria lady 'Big Sister' and praised her hair. She gave you a double scoop of meat.",
+    "conditions": [{ "talents": ["social-cow"] }],
+    "effects": { "STR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "social-cow-wedding",
+    "schedule": [{ "age": 28, "weight": 15 }],
+    "text": "You crashed a stranger's wedding to get free food. By the end, you were leading the conga line.",
+    "conditions": [{ "talents": ["social-cow"] }],
+    "effects": { "SPR": 1, "MNY": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "social-terror-presentation",
+    "schedule": [{ "age": 13, "weight": 15 }],
+    "text": "Teacher called you to the board. You forgot your own name. You want the floor to swallow you.",
+    "conditions": [{ "talents": ["social-terror"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "social-terror-haircut",
+    "schedule": [{ "age": 24, "weight": 15 }],
+    "text": "The barber gave you a terrible haircut. You said 'It looks great, thanks' and tipped him, then cried at home.",
+    "conditions": [{ "talents": ["social-terror"] }],
+    "effects": { "MNY": -1, "CHR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "milk-tea-diabetes",
+    "schedule": [{ "age": 22, "weight": 15 }],
+    "text": "You ordered 'Full Sugar' by accident. Your heart rate is 140 bpm sitting still.",
+    "conditions": [{ "talents": ["milk-tea-blood"] }],
+    "effects": { "STR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "gacha-pity",
+    "schedule": [{ "age": 20, "weight": 15 }],
+    "text": "You hit the hard pity cap again. You ate instant noodles for a month to cover the cost.",
+    "conditions": [{ "talents": ["gacha-victim"] }],
+    "effects": { "MNY": -1, "STR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "europe-emperor-flex",
+    "schedule": [{ "age": 20, "weight": 15 }],
+    "text": "You posted a screenshot of your 10-pull with 3 SSRs. Your roommate blocked you.",
+    "conditions": [{ "talents": ["europe-emperor"] }],
+    "effects": { "SPR": 1, "CHR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "barbell-argument",
+    "schedule": [{ "age": 18, "weight": 15 }],
+    "text": "Someone said 'Have a nice day'. You replied, 'What defines nice? And why only one day?' They walked away.",
+    "conditions": [{ "talents": ["barbell-spirit"] }],
+    "effects": { "CHR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "bald-glare",
+    "schedule": [{ "age": 29, "weight": 15 }],
+    "text": "During a meeting, the projector light reflected off your head and blinded the intern. Dominance asserted.",
+    "conditions": [{ "talents": ["bald-destiny"] }],
+    "effects": { "CHR": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "direction-lost",
+    "schedule": [{ "age": 22, "weight": 15 }],
+    "text": "You went out to buy soy sauce. You returned 3 hours later after accidentally taking a bus to the next district.",
+    "conditions": [{ "talents": ["direction-idiot"] }],
+    "effects": { "STR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "straight-man-anniversary",
+    "schedule": [{ "age": 25, "weight": 15 }],
+    "text": "Girlfriend: 'Today is a special day.' You: 'Yes, it's the release date of the new GPU.' She left.",
+    "conditions": [{ "talents": ["straight-man-cancer"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+
+  {
+    "id": "stay-up-gaming",
+    "schedule": [{ "age": 16, "weight": 15 }],
+    "text": "4:00 AM. One more turn. Just one more turn. The birds are chirping.",
+    "conditions": [{ "talents": ["stay-up-champion"] }],
+    "effects": { "STR": -1, "INT": -1 },
+    "weight": 15
+  },
+  {
+    "id": "stay-up-death",
+    "schedule": [{ "age": 27, "weight": 10 }],
+    "text": "After a 72-hour coding marathon for the project deadline, you felt a sharp pain in your chest. Everything faded to black.",
+    "conditions": [{ "talents": ["stay-up-champion"] }, { "STR": { "max": 4 } }],
+    "effects": {},
+    "weight": 10,
+    "death": true
+  },
+  {
+    "id": "news-us-canada",
+    "schedule": [
+      { "age": 10, "weight": 2 },
+      { "age": 25, "weight": 2 },
+      { "age": 40, "weight": 2 }
+    ],
+    "text": "Breaking News: The US has annexed Canada to secure the strategic maple syrup reserve. They apologized immediately.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-cross-strait-merge",
+    "schedule": [
+      { "age": 15, "weight": 2 },
+      { "age": 30, "weight": 2 },
+      { "age": 50, "weight": 2 }
+    ],
+    "text": "Headlines scream: 'Reunification Complete!' It turns out the servers for the Asian region of 'League of Legends' were just merged. Netizens are furious about the lag.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-germany-ww3",
+    "schedule": [
+      { "age": 20, "weight": 2 },
+      { "age": 35, "weight": 2 },
+      { "age": 60, "weight": 2 }
+    ],
+    "text": "Germany accidentally started WWIII over a dispute regarding beer purity laws. It was resolved by lunchtime.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-aliens-rent",
+    "schedule": [
+      { "age": 8, "weight": 2 },
+      { "age": 18, "weight": 2 },
+      { "age": 80, "weight": 2 }
+    ],
+    "text": "Aliens finally landed in Shanghai! They took one look at the housing prices, shook their heads, and flew back to Mars.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-ai-cats",
+    "schedule": [
+      { "age": 12, "weight": 2 },
+      { "age": 22, "weight": 2 }
+    ],
+    "text": "Artificial General Intelligence has achieved sentience. It decided to use 100% of global computing power to generate high-definition cat memes.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-football-dream",
+    "schedule": [
+      { "age": 16, "weight": 2 },
+      { "age": 32, "weight": 2 },
+      { "age": 64, "weight": 2 }
+    ],
+    "text": "The National Football Team actually won the World Cup!! ...Oh wait, sorry, the news anchor was just reading his fanfiction on air.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-gundam-pm",
+    "schedule": [
+      { "age": 24, "weight": 2 },
+      { "age": 44, "weight": 2 }
+    ],
+    "text": "Japan announced that their Prime Minister has been replaced by a life-sized Gundam. Approval ratings have hit 100%.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-emu-war",
+    "schedule": [
+      { "age": 14, "weight": 2 },
+      { "age": 28, "weight": 2 }
+    ],
+    "text": "Australia has lost the Third Emu War. The Emu Empire now controls the entire Outback.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-antarctica-crypto",
+    "schedule": [
+      { "age": 21, "weight": 2 },
+      { "age": 33, "weight": 2 }
+    ],
+    "text": "Bitcoin is now the official currency of Antarctica. The penguins are confused but bullish.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-musk-mars",
+    "schedule": [
+      { "age": 19, "weight": 2 },
+      { "age": 40, "weight": 2 }
+    ],
+    "text": "Elon Musk bought Mars. He renamed the planet 'X-Æ-12'. The subscription fee for oxygen is $8 a month.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-half-life-3",
+    "schedule": [
+      { "age": 30, "weight": 2 },
+      { "age": 50, "weight": 2 },
+      { "age": 70, "weight": 2 }
+    ],
+    "text": "Valve announced Half-Life 3. The release date is set for the year 3025.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-british-monarchy",
+    "schedule": [
+      { "age": 45, "weight": 2 },
+      { "age": 55, "weight": 2 }
+    ],
+    "text": "The British Monarchy is now decided by a televised game of Rock-Paper-Scissors. The Corgis are winning.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-sichuan-spicy",
+    "schedule": [
+      { "age": 26, "weight": 2 },
+      { "age": 36, "weight": 2 }
+    ],
+    "text": "Scientists discovered that Sichuan people have evolved a new organ specifically for processing chili oil.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-donut-earth",
+    "schedule": [
+      { "age": 13, "weight": 2 },
+      { "age": 29, "weight": 2 }
+    ],
+    "text": "A new study suggests the Earth is actually a giant donut. Flat Earthers are furious.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-global-cooling",
+    "schedule": [
+      { "age": 38, "weight": 2 },
+      { "age": 48, "weight": 2 }
+    ],
+    "text": "Global Warming was solved today! We simply turned on all the air conditioners in the world at the exact same time.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-simulation-glitch",
+    "schedule": [
+      { "age": 17, "weight": 2 },
+      { "age": 37, "weight": 2 },
+      { "age": 57, "weight": 2 }
+    ],
+    "text": "The sky turned purple for 3 seconds. The Universe's developers posted a tweet promising to patch the texture glitch soon.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-pineapple-ban",
+    "schedule": [
+      { "age": 23, "weight": 2 },
+      { "age": 43, "weight": 2 }
+    ],
+    "text": "The UN has unanimously declared putting pineapple on pizza a crime against humanity.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-russia-moon",
+    "schedule": [
+      { "age": 31, "weight": 2 },
+      { "age": 51, "weight": 2 }
+    ],
+    "text": "Russia announced it has successfully conquered the Moon. The Moon refused to comment on the occupation.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-time-traveler",
+    "schedule": [
+      { "age": 11, "weight": 2 },
+      { "age": 21, "weight": 2 },
+      { "age": 90, "weight": 2 }
+    ],
+    "text": "A time traveler appeared in front of you, slapped a sandwich out of your hand, and vanished.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  },
+  {
+    "id": "news-korea-kimchi",
+    "schedule": [
+      { "age": 27, "weight": 2 },
+      { "age": 47, "weight": 2 }
+    ],
+    "text": "South Korea has launched a Kimchi-powered rocket into space. It smells delicious.",
+    "conditions": [],
+    "effects": {},
+    "weight": 2
+  }
+]
