@@ -20,7 +20,7 @@ async function startRun() {
   <section class="space-y-6">
     <div class="space-y-3 text-center">
       <p class="text-xs uppercase tracking-[0.2em] text-slate-600">Simple UI</p>
-      <h2 class="font-display text-4xl font-semibold text-slate-900">Life Restart Simulator</h2>
+      <h2 class="font-display text-4xl font-semibold text-slate-900">Inequality Simulator</h2>
       <p class="text-sm text-slate-700">
         Runs offline in your browser · Pick talents, allocate stats, then click Start to watch your life play out.
       </p>
