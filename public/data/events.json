@@ -144,7 +144,7 @@
     ],
     "text": "Dad let go of the seat. You wobbled, panicked, then realized you were doing it alone.",
     "conditions": [],
-    "effects": { "STR": 1 },
+    "effects": {},
     "weight": 5
   },
   {
@@ -182,7 +182,7 @@
     "id": "school-start",
     "text": "First day of school! You got a new backpack.",
     "conditions": [],
-    "effects": { "INT": 1, "CHR": 1 },
+    "effects": {},
     "weight": 8
   },
   {
@@ -274,23 +274,135 @@
   },
   {
     "id": "college-tsinghua",
-    "text": "You get into Tsinghua. The campus is elite, and so are your classmates.",
+    "text": "You get into Tsinghua (清华). The campus is elite, and so are your classmates. Welcome to China's MIT.",
     "conditions": [{ "INT": { "min": 9 } }],
-    "effects": { "INT": -1 },
+    "effects": {},
+    "weight": 1,
+    "priority": 5
+  },
+  {
+    "id": "college-peking",
+    "text": "You're going to Peking University (北大). The birthplace of Chinese intellectualism. Your parents cry happy tears.",
+    "conditions": [{ "INT": { "min": 9 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 5
+  },
+  {
+    "id": "college-fudan",
+    "text": "Fudan University (复旦) in Shanghai. Top academics with big-city energy. Your future looks bright.",
+    "conditions": [{ "INT": { "min": 8 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-shanghai-jiaotong",
+    "text": "Shanghai Jiao Tong University (上海交大). Engineering powerhouse. You'll be building China's future.",
+    "conditions": [{ "INT": { "min": 8 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-zhejiang",
+    "text": "Zhejiang University (浙大) in Hangzhou. Beautiful campus, strong programs, and Alibaba is just down the road.",
+    "conditions": [{ "INT": { "min": 8 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-renmin",
+    "text": "Renmin University (人大). The school for future officials and economists. Your network will be powerful.",
+    "conditions": [{ "INT": { "min": 8 } }, { "CHR": { "min": 6 } }],
+    "effects": { "CHR": 1 },
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-nanjing",
+    "text": "Nanjing University (南大). One of China's oldest and most prestigious. The campus drips with history.",
+    "conditions": [{ "INT": { "min": 8 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 4
+  },
+  {
+    "id": "college-wuhan",
+    "text": "Wuhan University (武大). Cherry blossoms in spring, rigorous academics year-round. Central China's pride.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": {},
     "weight": 1,
     "priority": 3
   },
   {
-    "id": "college-second-tier",
-    "text": "You attend a solid second-tier university. It’s not glamorous, but it’s a real step up.",
+    "id": "college-xian-jiaotong",
+    "text": "Xi'an Jiaotong University (西安交大). A 985 school with deep roots. The ancient capital welcomes you.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "college-sichuan",
+    "text": "Sichuan University (川大) in Chengdu. Good school, great food, pandas nearby. Life-work balance achieved.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": { "SPR": 1 },
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "college-huazhong-tech",
+    "text": "Huazhong University of Science and Technology (华科). The 'MIT of the South'. Prepare for intense competition.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 3
+  },
+  {
+    "id": "college-211",
+    "text": "You got into a 211 university. Not the top tier, but still a respected institution. Your parents are relieved.",
     "conditions": [{ "INT": { "min": 6 } }],
-    "effects": { "INT": 1 },
+    "effects": {},
     "weight": 1,
     "priority": 2
   },
   {
-    "id": "college-local",
-    "text": "You attend a local college. You keep your head down and focus on building a stable future.",
+    "id": "college-provincial",
+    "text": "You attend your provincial university. Close to home, affordable tuition. A practical choice.",
+    "conditions": [{ "INT": { "min": 5 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 1
+  },
+  {
+    "id": "college-private",
+    "text": "A private university (民办大学). The tuition is steep, but at least you got a bachelor's degree track.",
+    "conditions": [{ "INT": { "min": 4 } }, { "MNY": { "min": 5 } }],
+    "effects": { "MNY": -1 },
+    "weight": 1,
+    "priority": 1
+  },
+  {
+    "id": "college-dazhuan",
+    "text": "You enter a junior college (大专). Three years, practical skills, straight to the workforce.",
+    "conditions": [{ "INT": { "min": 3 } }],
+    "effects": {},
+    "weight": 1,
+    "priority": 1
+  },
+  {
+    "id": "college-vocational",
+    "text": "Vocational school (职业技术学院). Learn a trade, get certified, start earning. Not everyone needs a degree.",
+    "conditions": [],
+    "effects": { "STR": 1 },
+    "weight": 1,
+    "priority": 0
+  },
+  {
+    "id": "college-none",
+    "text": "University isn't in the cards. You enter the workforce directly. The real education begins now.",
     "conditions": [],
     "effects": {},
     "weight": 1,
@@ -1697,7 +1809,7 @@
     ],
     "text": "You put on the Red Scarf for the first time. The teacher says it is dyed with the blood of martyrs.",
     "conditions": [],
-    "effects": { "SPR": 1 },
+    "effects": {},
     "weight": 8
   },
   {
@@ -2599,6 +2711,950 @@
     "text": "South Korea has launched a Kimchi-powered rocket into space. It smells delicious.",
     "conditions": [],
     "effects": {},
+    "weight": 2
+  },
+
+  {
+    "id": "youth-drowning-accident",
+    "schedule": [
+      { "age": 8, "weight": 2 },
+      { "age": 10, "weight": 2 },
+      { "age": 12, "weight": 1 }
+    ],
+    "text": "A day at the lake turned tragic. Your weak body couldn't fight the current. The water took you under.",
+    "conditions": [{ "STR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-playground-fall",
+    "schedule": [
+      { "age": 7, "weight": 2 },
+      { "age": 9, "weight": 2 }
+    ],
+    "text": "You fell from the monkey bars. Too frail to catch yourself, you hit the ground hard. The injury was fatal.",
+    "conditions": [{ "STR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-sports-collapse",
+    "schedule": [
+      { "age": 12, "weight": 2 },
+      { "age": 14, "weight": 2 },
+      { "age": 16, "weight": 2 }
+    ],
+    "text": "During PE class, your body gave out. Years of poor health caught up with you. You collapsed and never got up.",
+    "conditions": [{ "STR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-bike-accident",
+    "schedule": [
+      { "age": 10, "weight": 2 },
+      { "age": 13, "weight": 2 }
+    ],
+    "text": "Your bike hit a pothole. Too weak to control the fall, you tumbled into traffic. It was over in an instant.",
+    "conditions": [{ "STR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-depression-isolation",
+    "schedule": [
+      { "age": 13, "weight": 2 },
+      { "age": 15, "weight": 3 },
+      { "age": 17, "weight": 3 }
+    ],
+    "text": "The darkness inside grew too heavy. No one noticed the signs. One night, you decided not to wake up tomorrow.",
+    "conditions": [{ "SPR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-bullying-despair",
+    "schedule": [
+      { "age": 12, "weight": 2 },
+      { "age": 14, "weight": 3 },
+      { "age": 16, "weight": 2 }
+    ],
+    "text": "The bullying never stopped. Your spirit, already broken, finally shattered completely. You saw no way forward.",
+    "conditions": [{ "SPR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-exam-pressure",
+    "schedule": [
+      { "age": 15, "weight": 3 },
+      { "age": 17, "weight": 4 }
+    ],
+    "text": "The pressure to succeed crushed what little joy remained. After failing the exam, you felt there was nothing left to live for.",
+    "conditions": [{ "SPR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+  {
+    "id": "youth-loneliness-crisis",
+    "schedule": [
+      { "age": 11, "weight": 2 },
+      { "age": 14, "weight": 2 },
+      { "age": 16, "weight": 2 }
+    ],
+    "text": "You had no one to talk to. The loneliness consumed everything. In the end, the silence was all that remained.",
+    "conditions": [{ "SPR": { "max": 0 } }],
+    "effects": {},
+    "weight": 3,
+    "death": true
+  },
+
+  {
+    "id": "childhood-popular-kid",
+    "schedule": [
+      { "age": 8, "weight": 4 },
+      { "age": 10, "weight": 4 }
+    ],
+    "text": "Everyone wants to sit next to you at lunch. You're the kid who gets invited to every birthday party.",
+    "conditions": [{ "CHR": { "min": 7 } }],
+    "effects": { "SPR": 1 },
+    "weight": 4
+  },
+  {
+    "id": "youth-class-president",
+    "schedule": [
+      { "age": 12, "weight": 3 },
+      { "age": 14, "weight": 3 }
+    ],
+    "text": "You ran for class president and won by a landslide. Your speech had everyone cheering.",
+    "conditions": [{ "CHR": { "min": 8 } }],
+    "effects": { "SPR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "teen-social-butterfly",
+    "schedule": [
+      { "age": 15, "weight": 3 },
+      { "age": 17, "weight": 3 }
+    ],
+    "text": "You're the one who brings different friend groups together. People just naturally gravitate toward you.",
+    "conditions": [{ "CHR": { "min": 8 } }],
+    "effects": { "SPR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "adult-networking-master",
+    "schedule": [
+      { "age": 25, "weight": 3 },
+      { "age": 30, "weight": 3 },
+      { "age": 35, "weight": 2 }
+    ],
+    "text": "At a conference, you charmed your way into conversations with industry leaders. Doors are opening everywhere.",
+    "conditions": [{ "CHR": { "min": 8 } }],
+    "effects": { "MNY": 1 },
+    "weight": 3
+  },
+  {
+    "id": "adult-viral-charisma",
+    "schedule": [
+      { "age": 22, "weight": 2 },
+      { "age": 28, "weight": 2 }
+    ],
+    "text": "A video of you casually being yourself went viral. People love your energy. Brand deals are flooding in.",
+    "conditions": [{ "CHR": { "min": 9 } }],
+    "effects": { "MNY": 1 },
+    "weight": 2
+  },
+  {
+    "id": "midlife-inspiring-leader",
+    "schedule": [
+      { "age": 40, "weight": 2 },
+      { "age": 45, "weight": 2 }
+    ],
+    "text": "Your team at work would follow you anywhere. Under your leadership, morale is sky-high and results follow.",
+    "conditions": [{ "CHR": { "min": 8 } }],
+    "effects": { "MNY": 1 },
+    "weight": 2
+  },
+
+  {
+    "id": "childhood-joyful-explorer",
+    "schedule": [
+      { "age": 6, "weight": 4 },
+      { "age": 8, "weight": 4 }
+    ],
+    "text": "Every day feels like an adventure. You find magic in puddles, bugs, and clouds shaped like dragons.",
+    "conditions": [{ "SPR": { "min": 8 } }],
+    "effects": { "INT": 1 },
+    "weight": 4
+  },
+  {
+    "id": "youth-optimist-recovery",
+    "schedule": [
+      { "age": 12, "weight": 3 },
+      { "age": 15, "weight": 3 }
+    ],
+    "text": "When others see problems, you see opportunities. Your positive outlook helps you bounce back from setbacks faster.",
+    "conditions": [{ "SPR": { "min": 7 } }],
+    "effects": { "STR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "teen-infectious-joy",
+    "schedule": [
+      { "age": 16, "weight": 3 },
+      { "age": 18, "weight": 3 }
+    ],
+    "text": "Your genuine happiness is contagious. Friends say hanging out with you always lifts their spirits.",
+    "conditions": [{ "SPR": { "min": 8 } }],
+    "effects": { "CHR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "adult-grateful-mindset",
+    "schedule": [
+      { "age": 28, "weight": 3 },
+      { "age": 35, "weight": 3 },
+      { "age": 45, "weight": 3 }
+    ],
+    "text": "You wake up grateful every morning. This mindset attracts opportunities and good people into your life.",
+    "conditions": [{ "SPR": { "min": 8 } }],
+    "effects": { "CHR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "midlife-content-wisdom",
+    "schedule": [
+      { "age": 50, "weight": 3 },
+      { "age": 55, "weight": 3 }
+    ],
+    "text": "You've learned that happiness comes from within. Friends envy your peaceful contentment with life.",
+    "conditions": [{ "SPR": { "min": 8 } }],
+    "effects": { "INT": 1 },
+    "weight": 3
+  },
+  {
+    "id": "elder-beloved-grandparent",
+    "schedule": [
+      { "age": 65, "weight": 3 },
+      { "age": 70, "weight": 3 }
+    ],
+    "text": "Your grandchildren fight over who gets to sit next to you. Your warmth and joy make you everyone's favorite.",
+    "conditions": [{ "SPR": { "min": 7 } }],
+    "effects": { "CHR": 1 },
+    "weight": 3
+  },
+
+  {
+    "id": "childhood-summer-camp-elite",
+    "schedule": [
+      { "age": 9, "weight": 3 },
+      { "age": 11, "weight": 3 }
+    ],
+    "text": "While other kids went to regular camp, you spent summer at an exclusive program with world-class instructors.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "INT": 1 },
+    "weight": 3
+  },
+  {
+    "id": "teen-private-tutors",
+    "schedule": [
+      { "age": 14, "weight": 3 },
+      { "age": 16, "weight": 3 }
+    ],
+    "text": "Your family hired the best tutors money could buy. Your grades soared without the struggle others faced.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "INT": 1 },
+    "weight": 3
+  },
+  {
+    "id": "teen-gap-year-abroad",
+    "schedule": [
+      { "age": 18, "weight": 3 }
+    ],
+    "text": "Before college, you took a gap year traveling the world. The experiences shaped you in ways textbooks never could.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "CHR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "adult-investment-portfolio",
+    "schedule": [
+      { "age": 25, "weight": 3 },
+      { "age": 30, "weight": 3 }
+    ],
+    "text": "Your family's financial advisor set you up with a diversified investment portfolio. Money makes money.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "MNY": 1 },
+    "weight": 3
+  },
+  {
+    "id": "adult-startup-funding",
+    "schedule": [
+      { "age": 26, "weight": 2 },
+      { "age": 32, "weight": 2 }
+    ],
+    "text": "Your business idea got funded instantly. Having existing wealth made investors trust you more.",
+    "conditions": [{ "MNY": { "min": 9 } }],
+    "effects": { "MNY": 1 },
+    "weight": 2
+  },
+  {
+    "id": "adult-best-healthcare",
+    "schedule": [
+      { "age": 35, "weight": 3 },
+      { "age": 45, "weight": 3 },
+      { "age": 55, "weight": 3 }
+    ],
+    "text": "A health scare was caught early thanks to your premium healthcare plan. Money bought you more years.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "STR": 1 },
+    "weight": 3
+  },
+  {
+    "id": "midlife-philanthropy-recognition",
+    "schedule": [
+      { "age": 45, "weight": 2 },
+      { "age": 55, "weight": 2 }
+    ],
+    "text": "Your charitable foundation is making real impact. The recognition and connections that follow are priceless.",
+    "conditions": [{ "MNY": { "min": 9 } }],
+    "effects": { "CHR": 1 },
+    "weight": 2
+  },
+  {
+    "id": "elder-comfortable-retirement",
+    "schedule": [
+      { "age": 60, "weight": 3 },
+      { "age": 65, "weight": 3 }
+    ],
+    "text": "You retired early to a beautiful home. No financial worries, just time to enjoy life's pleasures.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "SPR": 1 },
+    "weight": 3
+  },
+
+  {
+    "id": "youth-triple-threat",
+    "schedule": [
+      { "age": 16, "weight": 1 },
+      { "age": 18, "weight": 1 }
+    ],
+    "text": "Rich, charming, and genuinely happy - you're living the dream. Opportunities seem to fall into your lap.",
+    "conditions": [{ "MNY": { "min": 7 } }, { "CHR": { "min": 7 } }, { "SPR": { "min": 7 } }],
+    "effects": { "INT": 1 },
+    "weight": 2
+  },
+  {
+    "id": "adult-golden-circle",
+    "schedule": [
+      { "age": 30, "weight": 1 },
+      { "age": 40, "weight": 1 }
+    ],
+    "text": "Your wealth opens doors, your charm keeps them open, and your positive energy makes everyone want to help you succeed.",
+    "conditions": [{ "MNY": { "min": 8 } }, { "CHR": { "min": 8 } }, { "SPR": { "min": 7 } }],
+    "effects": { "MNY": 1 },
+    "weight": 1
+  },
+  {
+    "id": "adult-influencer-mogul",
+    "schedule": [
+      { "age": 24, "weight": 1 },
+      { "age": 28, "weight": 1 }
+    ],
+    "text": "Your authentic joy and natural charisma made you an influencer sensation. Brands are paying you millions.",
+    "conditions": [{ "CHR": { "min": 9 } }, { "SPR": { "min": 8 } }],
+    "effects": { "MNY": 1 },
+    "weight": 1
+  },
+  {
+    "id": "midlife-beloved-mentor",
+    "schedule": [
+      { "age": 45, "weight": 2 },
+      { "age": 50, "weight": 2 }
+    ],
+    "text": "Your genuine care for others and magnetic personality made you a sought-after mentor. Your legacy grows.",
+    "conditions": [{ "CHR": { "min": 8 } }, { "SPR": { "min": 8 } }],
+    "effects": { "INT": 1 },
+    "weight": 2
+  },
+
+  {
+    "id": "research-phd-start",
+    "schedule": [{ "age": 22, "weight": 15 }, { "age": 23, "weight": 15 }],
+    "text": "You begin your PhD. Late nights in the lab, endless papers to read. The pursuit of knowledge consumes you.",
+    "conditions": [{ "INT": { "min": 8 } }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "research-phd-defense",
+    "schedule": [{ "age": 26, "weight": 20 }, { "age": 27, "weight": 20 }],
+    "text": "You defended your dissertation. Dr. is now your title. Years of sacrifice finally validated.",
+    "conditions": [{ "INT": { "min": 8 } }, { "events": ["research-phd-start"] }],
+    "effects": { "INT": 1 },
+    "weight": 20
+  },
+  {
+    "id": "research-postdoc",
+    "schedule": [{ "age": 28, "weight": 20 }, { "age": 29, "weight": 20 }],
+    "text": "Postdoc life. Low pay, high expectations. But your research is gaining attention in academic circles.",
+    "conditions": [{ "INT": { "min": 8 } }, { "events": ["research-phd-defense"] }],
+    "effects": { "MNY": -1 },
+    "weight": 20
+  },
+  {
+    "id": "research-tenure-track",
+    "schedule": [{ "age": 32, "weight": 20 }, { "age": 34, "weight": 20 }],
+    "text": "You landed a tenure-track position! The publish-or-perish pressure is real, but so is the prestige.",
+    "conditions": [{ "INT": { "min": 9 } }, { "events": ["research-postdoc"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "research-breakthrough",
+    "schedule": [{ "age": 38, "weight": 20 }, { "age": 42, "weight": 20 }],
+    "text": "Your paper causes a stir. Colleagues around the world are citing your work. You might be onto something big.",
+    "conditions": [{ "INT": { "min": 9 } }, { "events": ["research-tenure-track"] }],
+    "effects": { "INT": 1 },
+    "weight": 20
+  },
+  {
+    "id": "research-nobel-nomination",
+    "schedule": [{ "age": 50, "weight": 20 }, { "age": 55, "weight": 20 }],
+    "text": "Rumors swirl that you're on the Nobel shortlist. The phone call from Stockholm could come any October.",
+    "conditions": [{ "INT": { "min": 10 } }, { "events": ["research-breakthrough"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "research-nobel-prize",
+    "schedule": [{ "age": 55, "weight": 20 }, { "age": 60, "weight": 20 }, { "age": 65, "weight": 20 }],
+    "text": "The call came at 5 AM. You've won the Nobel Prize. Your life's work recognized by the world.",
+    "conditions": [{ "INT": { "min": 10 } }, { "events": ["research-nobel-nomination"] }],
+    "effects": { "MNY": 1, "CHR": 1, "SPR": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "acting-drama-school",
+    "schedule": [{ "age": 18, "weight": 15 }, { "age": 19, "weight": 15 }],
+    "text": "You enrolled in drama school. Voice training, movement classes, endless auditions. The stage calls to you.",
+    "conditions": [{ "CHR": { "min": 8 } }],
+    "effects": { "CHR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "acting-first-role",
+    "schedule": [{ "age": 22, "weight": 20 }, { "age": 24, "weight": 20 }],
+    "text": "Your first real role! A small part in a TV drama. You have three lines, but you nail every one.",
+    "conditions": [{ "CHR": { "min": 8 } }, { "events": ["acting-drama-school"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "acting-supporting-role",
+    "schedule": [{ "age": 26, "weight": 20 }, { "age": 28, "weight": 20 }],
+    "text": "A supporting role in a major production. Critics notice you. 'A star in the making,' one writes.",
+    "conditions": [{ "CHR": { "min": 9 } }, { "events": ["acting-first-role"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "acting-lead-role",
+    "schedule": [{ "age": 30, "weight": 20 }, { "age": 33, "weight": 20 }],
+    "text": "You're the lead! Your face is on billboards. Fans recognize you on the street. This is what you dreamed of.",
+    "conditions": [{ "CHR": { "min": 9 } }, { "events": ["acting-supporting-role"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "acting-award-nomination",
+    "schedule": [{ "age": 35, "weight": 20 }, { "age": 40, "weight": 20 }],
+    "text": "You're nominated for Best Actor/Actress. The red carpet awaits. Win or lose, you've made it.",
+    "conditions": [{ "CHR": { "min": 9 } }, { "events": ["acting-lead-role"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "acting-award-win",
+    "schedule": [{ "age": 38, "weight": 20 }, { "age": 42, "weight": 20 }, { "age": 48, "weight": 20 }],
+    "text": "And the award goes to... YOU! Tears stream down your face as you thank everyone who believed in you.",
+    "conditions": [{ "CHR": { "min": 10 } }, { "events": ["acting-award-nomination"] }],
+    "effects": { "MNY": 1, "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "acting-legend-status",
+    "schedule": [{ "age": 55, "weight": 20 }, { "age": 60, "weight": 20 }],
+    "text": "You receive a Lifetime Achievement Award. A montage of your greatest roles plays. The audience gives a standing ovation.",
+    "conditions": [{ "CHR": { "min": 10 } }, { "events": ["acting-award-win"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "sports-youth-talent",
+    "schedule": [{ "age": 12, "weight": 15 }, { "age": 14, "weight": 15 }],
+    "text": "A coach spots your athletic potential. You're invited to join an elite youth training program.",
+    "conditions": [{ "STR": { "min": 8 } }],
+    "effects": { "STR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "sports-national-team",
+    "schedule": [{ "age": 17, "weight": 20 }, { "age": 18, "weight": 20 }],
+    "text": "You made the national youth team! Grueling training camps, but you're competing for your country now.",
+    "conditions": [{ "STR": { "min": 8 } }, { "events": ["sports-youth-talent"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-professional",
+    "schedule": [{ "age": 20, "weight": 20 }, { "age": 22, "weight": 20 }],
+    "text": "You've gone pro. Sponsors are interested. Your body is your career now - every injury is a threat.",
+    "conditions": [{ "STR": { "min": 9 } }, { "events": ["sports-national-team"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-olympic-qualifier",
+    "schedule": [{ "age": 23, "weight": 20 }, { "age": 27, "weight": 20 }],
+    "text": "You qualified for the Olympics! Years of sacrifice led to this. The world's biggest stage awaits.",
+    "conditions": [{ "STR": { "min": 9 } }, { "events": ["sports-professional"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-olympic-bronze",
+    "schedule": [{ "age": 24, "weight": 20 }, { "age": 28, "weight": 20 }],
+    "text": "Olympic bronze! You stand on the podium, national anthem playing. Not gold, but still among the world's best.",
+    "conditions": [{ "STR": { "min": 9 } }, { "events": ["sports-olympic-qualifier"] }],
+    "effects": { "MNY": 1, "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-olympic-gold",
+    "schedule": [{ "age": 24, "weight": 20 }, { "age": 28, "weight": 20 }, { "age": 32, "weight": 20 }],
+    "text": "GOLD! You're an Olympic champion. Your nation celebrates. Children will grow up wanting to be you.",
+    "conditions": [{ "STR": { "min": 10 } }, { "events": ["sports-olympic-qualifier"] }],
+    "effects": { "MNY": 1, "CHR": 1, "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-world-record",
+    "schedule": [{ "age": 25, "weight": 20 }, { "age": 28, "weight": 20 }],
+    "text": "You broke the world record! Your name is etched in history. No one has ever done what you just did.",
+    "conditions": [{ "STR": { "min": 10 } }, { "events": ["sports-olympic-gold"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "sports-retirement-legend",
+    "schedule": [{ "age": 35, "weight": 20 }, { "age": 38, "weight": 20 }],
+    "text": "You announce retirement. Tributes pour in from around the world. Your jersey will be retired. Legend.",
+    "conditions": [{ "STR": { "min": 8 } }, { "events": ["sports-olympic-gold"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "business-first-venture",
+    "schedule": [{ "age": 22, "weight": 15 }, { "age": 25, "weight": 15 }],
+    "text": "You start your first business. A small operation, bootstrapped with savings. The entrepreneurial journey begins.",
+    "conditions": [{ "MNY": { "min": 6 } }, { "INT": { "min": 6 } }],
+    "effects": { "MNY": -1 },
+    "weight": 15
+  },
+  {
+    "id": "business-first-profit",
+    "schedule": [{ "age": 25, "weight": 20 }, { "age": 28, "weight": 20 }],
+    "text": "Your business turned its first real profit! The sleepless nights are paying off. Time to think bigger.",
+    "conditions": [{ "MNY": { "min": 6 } }, { "events": ["business-first-venture"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-expansion",
+    "schedule": [{ "age": 28, "weight": 20 }, { "age": 32, "weight": 20 }],
+    "text": "You're expanding. New hires, new offices, new markets. The company is growing faster than you imagined.",
+    "conditions": [{ "MNY": { "min": 7 } }, { "events": ["business-first-profit"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-series-a",
+    "schedule": [{ "age": 30, "weight": 20 }, { "age": 33, "weight": 20 }],
+    "text": "You closed your Series A funding! Venture capitalists believe in your vision. Now the pressure really begins.",
+    "conditions": [{ "MNY": { "min": 8 } }, { "CHR": { "min": 6 } }, { "events": ["business-expansion"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-unicorn",
+    "schedule": [{ "age": 35, "weight": 20 }, { "age": 38, "weight": 20 }],
+    "text": "Your company is valued at over $1 billion. You're a unicorn founder. Magazine covers want your face.",
+    "conditions": [{ "MNY": { "min": 9 } }, { "events": ["business-series-a"] }],
+    "effects": { "MNY": 1, "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-ipo",
+    "schedule": [{ "age": 38, "weight": 20 }, { "age": 42, "weight": 20 }],
+    "text": "IPO day. You ring the bell at the stock exchange. Your paper wealth is now very, very real.",
+    "conditions": [{ "MNY": { "min": 9 } }, { "events": ["business-unicorn"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-billionaire",
+    "schedule": [{ "age": 42, "weight": 20 }, { "age": 48, "weight": 20 }],
+    "text": "Forbes lists you as a billionaire. From humble beginnings to the ultra-elite. The money is almost abstract now.",
+    "conditions": [{ "MNY": { "min": 10 } }, { "events": ["business-ipo"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "business-legacy-foundation",
+    "schedule": [{ "age": 50, "weight": 20 }, { "age": 55, "weight": 20 }],
+    "text": "You establish a foundation to give back. Billions pledged to causes you believe in. Your legacy extends beyond wealth.",
+    "conditions": [{ "MNY": { "min": 10 } }, { "events": ["business-billionaire"] }],
+    "effects": { "SPR": 1, "CHR": 1 },
+    "weight": 20
+  },
+
+  {
+    "id": "caili-pressure",
+    "schedule": [{ "age": 26, "weight": 4 }, { "age": 28, "weight": 5 }, { "age": 30, "weight": 4 }],
+    "text": "Her family demands 彩礼 of 380,000 yuan, a car, and an apartment. Your parents sell their only home. Love shouldn't cost this much.",
+    "conditions": [{ "MNY": { "max": 5 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "caili-cant-afford",
+    "schedule": [{ "age": 28, "weight": 3 }, { "age": 30, "weight": 4 }, { "age": 32, "weight": 3 }],
+    "text": "You can't afford the bride price. She marries someone else. Your mother cries, blaming herself for not providing more.",
+    "conditions": [{ "MNY": { "max": 3 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "caili-rich-easy",
+    "schedule": [{ "age": 26, "weight": 3 }, { "age": 28, "weight": 3 }],
+    "text": "The bride price is pocket change to your family. Her parents are thrilled. Money smooths everything.",
+    "conditions": [{ "MNY": { "min": 8 } }],
+    "effects": { "SPR": 1 },
+    "weight": 3
+  },
+
+  {
+    "id": "political-comment-tea",
+    "schedule": [{ "age": 25, "weight": 2 }, { "age": 30, "weight": 2 }, { "age": 35, "weight": 2 }],
+    "text": "You posted something 'sensitive' online. Two officers invite you for tea (喝茶). A friendly warning this time. Delete everything.",
+    "conditions": [{ "INT": { "min": 6 } }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "political-detained",
+    "schedule": [{ "age": 28, "weight": 1 }, { "age": 35, "weight": 1 }, { "age": 42, "weight": 1 }],
+    "text": "Your Weibo post went viral for the wrong reasons. 15 days administrative detention for 'picking quarrels and provoking trouble' (寻衅滋事).",
+    "conditions": [{ "CHR": { "min": 7 } }, { "MNY": { "max": 6 } }],
+    "effects": { "SPR": -1, "CHR": -1 },
+    "weight": 1
+  },
+  {
+    "id": "political-lawyer-friend",
+    "schedule": [{ "age": 35, "weight": 1 }, { "age": 40, "weight": 1 }],
+    "text": "Your lawyer friend disappeared. Three months later, he appears on TV making a confession. You delete his number.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 1
+  },
+
+  {
+    "id": "doxxed-online",
+    "schedule": [{ "age": 22, "weight": 2 }, { "age": 28, "weight": 2 }, { "age": 35, "weight": 2 }],
+    "text": "You angered the wrong people online. Within hours, your ID, address, workplace, and family photos are everywhere. 开盒了.",
+    "conditions": [{ "CHR": { "min": 5 } }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "doxxed-fired",
+    "schedule": [{ "age": 25, "weight": 1 }, { "age": 30, "weight": 1 }, { "age": 35, "weight": 1 }],
+    "text": "The online mob called your employer. You're fired to 'protect company reputation'. Your crime? A controversial opinion.",
+    "conditions": [{ "events": ["doxxed-online"] }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "cyberbully-victim",
+    "schedule": [{ "age": 20, "weight": 2 }, { "age": 25, "weight": 2 }, { "age": 30, "weight": 2 }],
+    "text": "A screenshot taken out of context. Thousands calling you a traitor, demanding you die. You stop checking your phone.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "996-burnout",
+    "schedule": [{ "age": 25, "weight": 5 }, { "age": 28, "weight": 5 }, { "age": 32, "weight": 4 }],
+    "text": "996 is the 'blessing' of working at a big tech company. 9am to 9pm, 6 days a week. Your body is breaking down.",
+    "conditions": [{ "MNY": { "min": 5 } }, { "MNY": { "max": 8 } }],
+    "effects": { "STR": -1, "SPR": -1 },
+    "weight": 5
+  },
+  {
+    "id": "996-sudden-death",
+    "schedule": [{ "age": 28, "weight": 1 }, { "age": 32, "weight": 1 }, { "age": 35, "weight": 1 }],
+    "text": "Your coworker collapsed at his desk. Heart attack at 30. The company sent flowers and hired his replacement within a week.",
+    "conditions": [{ "events": ["996-burnout"] }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "lying-flat",
+    "schedule": [{ "age": 26, "weight": 3 }, { "age": 30, "weight": 3 }],
+    "text": "You embrace 躺平 (lying flat). Minimum effort, minimum consumption, maximum peace. Let others chase the impossible dream.",
+    "conditions": [{ "SPR": { "max": 4 } }],
+    "effects": { "SPR": 1, "MNY": -1 },
+    "weight": 3
+  },
+
+  {
+    "id": "age-35-crisis",
+    "schedule": [{ "age": 35, "weight": 6 }],
+    "text": "You're 35. Job listings all say 'under 35 preferred'. Your experience means nothing. Too old for tech, too young to retire.",
+    "conditions": [{ "MNY": { "max": 7 } }],
+    "effects": { "SPR": -1 },
+    "weight": 6
+  },
+  {
+    "id": "age-35-layoff",
+    "schedule": [{ "age": 35, "weight": 3 }, { "age": 36, "weight": 3 }],
+    "text": "Company restructuring. Everyone over 35 gets 'optimized'. N+1 compensation if you sign quietly. You sign.",
+    "conditions": [{ "MNY": { "max": 6 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "age-35-delivery",
+    "schedule": [{ "age": 36, "weight": 2 }, { "age": 38, "weight": 2 }],
+    "text": "Former programmer, now food delivery rider. The algorithm controls your life. You race through traffic for ¥5 per order.",
+    "conditions": [{ "MNY": { "max": 4 } }, { "events": ["age-35-layoff"] }],
+    "effects": { "STR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "housing-slave",
+    "schedule": [{ "age": 28, "weight": 4 }, { "age": 30, "weight": 5 }, { "age": 32, "weight": 4 }],
+    "text": "You bought a tiny apartment in a third-tier city. 30-year mortgage. You're a 房奴 now - slave to the house payment.",
+    "conditions": [{ "MNY": { "min": 4 } }, { "MNY": { "max": 6 } }],
+    "effects": { "MNY": -1 },
+    "weight": 4
+  },
+  {
+    "id": "housing-unfinished",
+    "schedule": [{ "age": 30, "weight": 2 }, { "age": 33, "weight": 2 }],
+    "text": "The developer went bankrupt. Your apartment is an unfinished concrete shell. You still owe the bank 2 million yuan.",
+    "conditions": [{ "MNY": { "max": 5 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "housing-protest",
+    "schedule": [{ "age": 32, "weight": 1 }, { "age": 35, "weight": 1 }],
+    "text": "You joined other homeowners to protest the unfinished building. Police dispersed you. 'Maintain stability,' they said.",
+    "conditions": [{ "events": ["housing-unfinished"] }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "medical-bankruptcy",
+    "schedule": [{ "age": 45, "weight": 3 }, { "age": 50, "weight": 3 }, { "age": 55, "weight": 3 }],
+    "text": "Your parent needs surgery. The hospital wants ¥200,000 upfront. You sell everything. In China, one illness can destroy a family.",
+    "conditions": [{ "MNY": { "max": 5 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "medical-guanxi",
+    "schedule": [{ "age": 40, "weight": 2 }, { "age": 50, "weight": 2 }],
+    "text": "Your father needs a specialist. The waiting list is 6 months. But you know someone who knows someone. Money changes hands.",
+    "conditions": [{ "MNY": { "min": 7 } }],
+    "effects": { "MNY": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "gender-hiring",
+    "schedule": [{ "age": 24, "weight": 3 }, { "age": 28, "weight": 3 }],
+    "text": "'Are you married? Planning children?' The interviewer asks. You know the right answer is a lie. You lie.",
+    "conditions": [],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "gender-pregnancy-fired",
+    "schedule": [{ "age": 28, "weight": 2 }, { "age": 32, "weight": 2 }],
+    "text": "You announced your pregnancy. Suddenly your performance reviews tanked. The message is clear: resign quietly.",
+    "conditions": [],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 2
+  },
+  {
+    "id": "leftover-woman",
+    "schedule": [{ "age": 28, "weight": 3 }, { "age": 30, "weight": 4 }, { "age": 32, "weight": 3 }],
+    "text": "Relatives call you 剩女 (leftover woman). You have a master's degree and a good career. But unmarried at 30? Failure.",
+    "conditions": [{ "INT": { "min": 7 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+
+  {
+    "id": "corruption-envelope",
+    "schedule": [{ "age": 30, "weight": 2 }, { "age": 35, "weight": 2 }, { "age": 40, "weight": 2 }],
+    "text": "To get the permit approved, you need to stuff red envelopes (红包). Everyone does it. You do it too.",
+    "conditions": [{ "MNY": { "min": 5 } }],
+    "effects": { "MNY": -1 },
+    "weight": 2
+  },
+  {
+    "id": "corruption-caught",
+    "schedule": [{ "age": 40, "weight": 1 }, { "age": 45, "weight": 1 }],
+    "text": "The anti-corruption campaign catches your business partner. He names names to reduce his sentence. Yours is on the list.",
+    "conditions": [{ "MNY": { "min": 7 } }, { "events": ["corruption-envelope"] }],
+    "effects": { "MNY": -1, "SPR": -1, "CHR": -1 },
+    "weight": 1
+  },
+
+  {
+    "id": "hukou-child-school",
+    "schedule": [{ "age": 32, "weight": 3 }, { "age": 35, "weight": 3 }],
+    "text": "Your child can't attend local public school - wrong hukou. Private school costs ¥80,000/year. Or send them back to grandparents.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "hukou-gaokao-return",
+    "schedule": [{ "age": 45, "weight": 3 }, { "age": 48, "weight": 3 }],
+    "text": "Your child must return to your hometown for gaokao. Different textbooks, no friends, fierce competition. The system is rigged.",
+    "conditions": [{ "talents": ["rural-hukou"] }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+
+  {
+    "id": "social-credit-low",
+    "schedule": [{ "age": 35, "weight": 1 }, { "age": 40, "weight": 1 }],
+    "text": "Your social credit score dropped. Can't buy high-speed rail tickets. Can't fly. Your name scrolls on public screens: untrustworthy.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": { "CHR": -1, "SPR": -1 },
+    "weight": 1
+  },
+
+  {
+    "id": "parents-guilt",
+    "schedule": [{ "age": 30, "weight": 3 }, { "age": 35, "weight": 3 }, { "age": 40, "weight": 3 }],
+    "text": "Your parents sacrificed everything for you. Now they're old and you can barely afford to visit. The guilt is crushing.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "pension-worry",
+    "schedule": [{ "age": 50, "weight": 3 }, { "age": 55, "weight": 4 }],
+    "text": "The pension fund might run out by 2035, they say. You've paid in for 30 years. Will there be anything left for you?",
+    "conditions": [{ "MNY": { "max": 6 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "involution-child",
+    "schedule": [{ "age": 35, "weight": 4 }, { "age": 38, "weight": 4 }, { "age": 42, "weight": 3 }],
+    "text": "Your 6-year-old has math tutoring, English tutoring, piano, swimming, and coding classes. This is 内卷 (involution). Everyone competes, nobody wins.",
+    "conditions": [{ "MNY": { "min": 5 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "three-child-pressure",
+    "schedule": [{ "age": 32, "weight": 2 }, { "age": 35, "weight": 2 }],
+    "text": "The government wants you to have three children. You can barely afford one. The workplace wants zero. You have zero.",
+    "conditions": [{ "MNY": { "max": 5 } }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "covid-lockdown",
+    "schedule": [{ "age": 25, "weight": 3 }, { "age": 30, "weight": 3 }, { "age": 35, "weight": 3 }],
+    "text": "Locked in your apartment for 3 months. No income, dwindling savings, endless PCR tests. You bang pots on the balcony at midnight.",
+    "conditions": [],
+    "effects": { "SPR": -1, "MNY": -1 },
+    "weight": 3,
+    "repeatable": true
+  },
+  {
+    "id": "covid-business-destroyed",
+    "schedule": [{ "age": 35, "weight": 2 }, { "age": 40, "weight": 2 }],
+    "text": "Your small business didn't survive the lockdowns. Ten years of work, gone. The rent is still due.",
+    "conditions": [{ "MNY": { "max": 6 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "rich-kid-comparison",
+    "schedule": [{ "age": 25, "weight": 3 }, { "age": 30, "weight": 3 }],
+    "text": "Your classmate posts photos from his third vacation this year. His parents bought him an apartment. You eat instant noodles.",
+    "conditions": [{ "MNY": { "max": 4 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "class-ceiling",
+    "schedule": [{ "age": 35, "weight": 3 }, { "age": 40, "weight": 3 }],
+    "text": "You worked harder than anyone. But the promotion went to the boss's nephew. Meritocracy is a fairy tale for the poor.",
+    "conditions": [{ "MNY": { "max": 5 } }, { "INT": { "min": 7 } }],
+    "effects": { "SPR": -1 },
+    "weight": 3
+  },
+  {
+    "id": "village-return-shame",
+    "schedule": [{ "age": 35, "weight": 2 }, { "age": 40, "weight": 2 }],
+    "text": "You return home for Spring Festival. The questions begin: How much do you make? Bought a house? Married? You dread going back.",
+    "conditions": [{ "MNY": { "max": 5 } }, { "talents": ["rural-hukou"] }],
+    "effects": { "SPR": -1 },
+    "weight": 2
+  },
+
+  {
+    "id": "childhood-parents-arguing",
+    "schedule": [{ "age": 10, "weight": 4 }],
+    "text": "You overhear your parents arguing about money while playing knockoff games on your hand-me-down iPad. You pretend not to hear.",
+    "conditions": [{ "MNY": { "max": 4 } }, { "SPR": { "max": 5 } }],
+    "effects": { "SPR": -1 },
+    "weight": 4
+  },
+  {
+    "id": "stock-diaper-windfall",
+    "schedule": [{ "age": 35, "weight": 2 }],
+    "text": "The shares you bought in 'Automatic Drying Diapers Inc.' 5 years ago have risen by 500%. Sometimes dumb luck beats strategy.",
+    "conditions": [],
+    "effects": { "MNY": 1 },
     "weight": 2
   }
 ]

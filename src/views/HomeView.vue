@@ -19,10 +19,12 @@ async function startRun() {
 <template>
   <section class="space-y-6">
     <div class="space-y-3 text-center">
-      <p class="text-xs uppercase tracking-[0.2em] text-slate-600">Simple UI</p>
-      <h2 class="font-display text-4xl font-semibold text-slate-900">Inequality Simulator</h2>
+      <h2 class="font-display text-4xl font-semibold text-slate-900 flex items-center justify-center gap-3">
+        <img src="@/assets/restart.ico" alt="" class="h-10 w-10">
+        Inequality Simulator
+      </h2>
       <p class="text-sm text-slate-700">
-        Runs offline in your browser · Pick talents, allocate stats, then click Start to watch your life play out.
+        Pick talents, allocate stats, then click Start to watch your life play out.
       </p>
     </div>
 
@@ -43,18 +45,7 @@ async function startRun() {
       </button>
     </div>
 
-    <div class="grid gap-3 sm:grid-cols-2">
-      <div class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-600">Data</p>
-        <p class="mt-1 text-base font-semibold text-slate-900">Static JSON</p>
-        <p class="text-sm text-slate-600">events.json · talents.json · ages.json</p>
-      </div>
-      <div class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-600">AI Placeholder</p>
-        <p class="mt-1 text-base font-semibold text-slate-900">useAI Stub</p>
-        <p class="text-sm text-slate-600">Uses static text when no API is available.</p>
-      </div>
-    </div>
+
 
     <div class="rounded-lg border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-sm">
       Current state: {{ gameStore.state }} · Data {{ dataStore.loaded ? 'loaded' : 'not loaded' }}

@@ -28,7 +28,6 @@ async function restart() {
     <header class="text-center">
       <p class="text-xs uppercase tracking-[0.2em] text-slate-600">Life Summary</p>
       <h2 class="mt-2 font-display text-3xl font-semibold text-slate-900">Run Complete</h2>
-      <p class="mt-1 text-sm text-slate-600">This summary is a static template for now; AI text can be added later.</p>
     </header>
 
     <ScoreDisplay

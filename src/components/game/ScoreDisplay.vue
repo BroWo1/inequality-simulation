@@ -53,6 +53,5 @@ const title = computed(() => getJudgmentTitle(props.score))
         <p class="text-lg font-semibold text-slate-900">{{ age }} yrs</p>
       </div>
     </div>
-    <p class="text-xs text-slate-600">Formula: (sum of stats × 2) + (age ÷ 2)</p>
   </section>
 </template>

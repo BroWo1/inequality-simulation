@@ -4,6 +4,7 @@ export function useCondition() {
 
     const stats = context.stats || {}
     const ownedTalents = context.talents || []
+    const eventCounts = context.eventCounts || {}
 
     return conditions.every((condition) => {
       if (Array.isArray(condition?.talents)) {
@@ -11,8 +12,13 @@ export function useCondition() {
         if (missing) return false
       }
 
+      if (Array.isArray(condition?.events)) {
+        const missingEvent = condition.events.some((eventId) => !eventCounts[eventId])
+        if (missingEvent) return false
+      }
+
       return Object.entries(condition)
-        .filter(([key]) => key !== 'talents')
+        .filter(([key]) => key !== 'talents' && key !== 'events')
         .every(([key, rule]) => checkStatRule(stats[key] ?? 0, rule))
     })
   }

@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router'
 import EventLog from '../components/game/EventLog.vue'
 import GameControls from '../components/game/GameControls.vue'
 import { useGame } from '../composables/useGame'
-import { STAT_KEYS } from '../utils/constants'
+import { STAT_KEYS, STAT_LABELS } from '../utils/constants'
 
 const router = useRouter()
 const { dataStore, gameStore, stepYear } = useGame()
@@ -53,7 +53,7 @@ async function nextYear() {
         :key="key"
         class="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-3 py-2 shadow-sm"
       >
-        <span class="text-sm text-slate-600">{{ key }}</span>
+        <span class="text-sm text-slate-600">{{ STAT_LABELS[key] }}</span>
         <span class="text-lg font-semibold text-slate-900">{{ gameStore.stats[key] }}</span>
       </div>
     </div>

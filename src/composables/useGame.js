@@ -48,14 +48,19 @@ export function useGame() {
 
       const fixedList = events.getFixedEvents(ageConfig, baseContext)
       const fixedIds = fixedList.map((evt) => evt.id)
-      const picked = events.pickEventFromAge(ageConfig, { ...baseContext, excludeEventIds: fixedIds })
+      const randomEventCount = ageConfig.randomEventCount ?? 1
 
       const queue = [...fixedList]
+      const pickedIds = [...fixedIds]
 
-      if (picked) {
-        queue.push(picked)
-        const branch = events.pickBranch(picked, baseContext)
-        if (branch) queue.push(branch)
+      for (let i = 0; i < randomEventCount; i++) {
+        const picked = events.pickEventFromAge(ageConfig, { ...baseContext, excludeEventIds: pickedIds })
+        if (picked) {
+          queue.push(picked)
+          pickedIds.push(picked.id)
+          const branch = events.pickBranch(picked, baseContext)
+          if (branch) queue.push(branch)
+        }
       }
 
       if (rollNaturalDeath(targetAge, gameStore.stats.STR)) {

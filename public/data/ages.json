@@ -1,15 +1,15 @@
 {
   "6": { "fixedEvents": ["school-start"] },
-  "7": { "fixedEvents": ["annual-school-life"] },
-  "8": { "fixedEvents": ["annual-school-life"] },
-  "9": { "fixedEvents": ["annual-school-life"] },
-  "10": { "fixedEvents": ["annual-school-life"] },
-  "11": { "fixedEvents": ["annual-school-life"] },
-  "12": { "fixedEvents": ["annual-school-life"] },
-  "13": { "fixedEvents": ["annual-school-life"] },
-  "14": { "fixedEvents": ["annual-school-life"] },
+  "7": { "randomEventCount": 2 },
+  "8": { "randomEventCount": 2 },
+  "9": { "randomEventCount": 2 },
+  "10": { "randomEventCount": 2 },
+  "11": { "randomEventCount": 2 },
+  "12": { "randomEventCount": 2 },
+  "13": { "randomEventCount": 2 },
+  "14": { "randomEventCount": 2 },
   "15": {
-    "fixedEvents": ["annual-school-life"],
+    "randomEventCount": 2,
     "randomEventsOverride": true,
     "randomEvents": [
       { "id": "high-school-key", "priority": 2 },
@@ -17,16 +17,33 @@
       { "id": "high-school-zhongzhuan", "priority": 0 }
     ]
   },
-  "16": { "fixedEvents": ["annual-school-life"] },
-  "17": { "fixedEvents": ["annual-school-life"] },
+  "16": { "randomEventCount": 2 },
+  "17": { "randomEventCount": 2 },
   "18": {
-    "fixedEvents": ["graduation-day"],
+    "randomEventCount": 1,
     "randomEventsOverride": true,
     "randomEvents": [
+      { "id": "college-ivy-league", "priority": 5 },
+      { "id": "college-tsinghua", "priority": 5 },
+      { "id": "college-peking", "priority": 5 },
       { "id": "college-duke", "priority": 4 },
-      { "id": "college-tsinghua", "priority": 3 },
-      { "id": "college-second-tier", "priority": 2 },
-      { "id": "college-local", "priority": 0 }
+      { "id": "college-uc-berkeley", "priority": 4 },
+      { "id": "college-fudan", "priority": 4 },
+      { "id": "college-shanghai-jiaotong", "priority": 4 },
+      { "id": "college-zhejiang", "priority": 4 },
+      { "id": "college-renmin", "priority": 4 },
+      { "id": "college-nanjing", "priority": 4 },
+      { "id": "college-liberal-arts", "priority": 3 },
+      { "id": "college-wuhan", "priority": 3 },
+      { "id": "college-xian-jiaotong", "priority": 3 },
+      { "id": "college-sichuan", "priority": 3 },
+      { "id": "college-huazhong-tech", "priority": 3 },
+      { "id": "college-211", "priority": 2 },
+      { "id": "college-provincial", "priority": 1 },
+      { "id": "college-private", "priority": 1 },
+      { "id": "college-dazhuan", "priority": 1 },
+      { "id": "college-vocational", "priority": 0 },
+      { "id": "college-none", "priority": 0 }
     ]
   }
 }
