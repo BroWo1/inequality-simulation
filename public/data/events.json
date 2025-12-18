@@ -191,7 +191,8 @@
     "conditions": [{ "INT": { "min": 8 } }, { "MNY": { "min": 4 } }],
     "effects": { "INT": 1, "SPR": -1 },
     "weight": 1,
-    "priority": 2
+    "priority": 2,
+    "repels": ["high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-normal",
@@ -199,7 +200,8 @@
     "conditions": [{ "INT": { "min": 5 } }, { "MNY": { "min": 2 } }],
     "effects": { "INT": 1 },
     "weight": 1,
-    "priority": 1
+    "priority": 1,
+    "repels": ["high-school-key", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-zhongzhuan",
@@ -207,7 +209,8 @@
     "conditions": [],
     "effects": { "STR": 1 },
     "weight": 1,
-    "priority": 0
+    "priority": 0,
+    "repels": ["high-school-key", "high-school-normal", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-bnu-experimental",
@@ -215,7 +218,8 @@
     "conditions": [{ "INT": { "min": 7 } }, { "MNY": { "min": 3 } }, { "talents": ["international-track"] }],
     "effects": { "INT": 1 },
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-rdfz",
@@ -223,14 +227,16 @@
     "conditions": [{ "MNY": { "min": 5 } }, { "talents": ["international-track"] }],
     "effects": { "INT": -1, "SPR": 1 },
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-qhfz",
     "text": "You got into Tsinghua International School. The people are talented, but the teachers and staffs are Martian",
     "conditions": [{ "MNY": { "min": 3 } }],
     "effects": { "INT": -2},
-    "weight": 2
+    "weight": 2,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-international", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "high-school-international",
@@ -238,7 +244,8 @@
     "conditions": [{ "MNY": { "min": 4 } }, { "talents": ["international-track"] }],
     "effects": { "CHR": 1 },
     "weight": 1,
-    "priority": 2
+    "priority": 2,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "vocational-track", "key-school-pressure"]
   },
   {
     "id": "college-duke",
@@ -246,7 +253,8 @@
     "conditions": [{ "INT": { "min": 8 } }, { "MNY": { "min": 7 } }, { "talents": ["international-track"] }],
     "effects": { "CHR": 1, "MNY": -1 },
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-ivy-league",
@@ -254,7 +262,8 @@
     "conditions": [{ "INT": { "min": 9 } }, { "MNY": { "min": 8 } }, { "talents": ["international-track"] }],
     "effects": { "CHR": 1, "INT": 1 },
     "weight": 1,
-    "priority": 5
+    "priority": 5,
+    "repels": ["college-duke", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-uc-berkeley",
@@ -262,7 +271,8 @@
     "conditions": [{ "INT": { "min": 7 } }, { "MNY": { "min": 6 } }, { "talents": ["international-track"] }],
     "effects": { "INT": 1 },
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["college-duke", "college-ivy-league", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-liberal-arts",
@@ -270,7 +280,8 @@
     "conditions": [{ "INT": { "min": 6 } }, { "MNY": { "min": 7 } }, { "talents": ["international-track"] }],
     "effects": { "CHR": 1 },
     "weight": 1,
-    "priority": 2
+    "priority": 2,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-tsinghua",
@@ -278,7 +289,8 @@
     "conditions": [{ "INT": { "min": 9 } }],
     "effects": {},
     "weight": 1,
-    "priority": 5
+    "priority": 5,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-peking",
@@ -286,7 +298,8 @@
     "conditions": [{ "INT": { "min": 9 } }],
     "effects": {},
     "weight": 1,
-    "priority": 5
+    "priority": 5,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-fudan",
@@ -294,7 +307,8 @@
     "conditions": [{ "INT": { "min": 8 } }],
     "effects": {},
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-shanghai-jiaotong",
@@ -302,7 +316,8 @@
     "conditions": [{ "INT": { "min": 8 } }],
     "effects": {},
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-zhejiang",
@@ -310,7 +325,8 @@
     "conditions": [{ "INT": { "min": 8 } }],
     "effects": {},
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-renmin",
@@ -318,7 +334,8 @@
     "conditions": [{ "INT": { "min": 8 } }, { "CHR": { "min": 6 } }],
     "effects": { "CHR": 1 },
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-nanjing",
@@ -326,7 +343,8 @@
     "conditions": [{ "INT": { "min": 8 } }],
     "effects": {},
     "weight": 1,
-    "priority": 4
+    "priority": 4,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-wuhan",
@@ -334,7 +352,8 @@
     "conditions": [{ "INT": { "min": 7 } }],
     "effects": {},
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-xian-jiaotong",
@@ -342,7 +361,8 @@
     "conditions": [{ "INT": { "min": 7 } }],
     "effects": {},
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-sichuan",
@@ -350,7 +370,8 @@
     "conditions": [{ "INT": { "min": 7 } }],
     "effects": { "SPR": 1 },
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-huazhong-tech",
@@ -358,7 +379,8 @@
     "conditions": [{ "INT": { "min": 7 } }],
     "effects": {},
     "weight": 1,
-    "priority": 3
+    "priority": 3,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-211",
@@ -366,7 +388,8 @@
     "conditions": [{ "INT": { "min": 6 } }],
     "effects": {},
     "weight": 1,
-    "priority": 2
+    "priority": 2,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-provincial", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-provincial",
@@ -374,7 +397,8 @@
     "conditions": [{ "INT": { "min": 5 } }],
     "effects": {},
     "weight": 1,
-    "priority": 1
+    "priority": 1,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-private", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-private",
@@ -382,7 +406,8 @@
     "conditions": [{ "INT": { "min": 4 } }, { "MNY": { "min": 5 } }],
     "effects": { "MNY": -1 },
     "weight": 1,
-    "priority": 1
+    "priority": 1,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-dazhuan", "college-vocational", "college-none"]
   },
   {
     "id": "college-dazhuan",
@@ -390,7 +415,8 @@
     "conditions": [{ "INT": { "min": 3 } }],
     "effects": {},
     "weight": 1,
-    "priority": 1
+    "priority": 1,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-vocational", "college-none"]
   },
   {
     "id": "college-vocational",
@@ -398,7 +424,8 @@
     "conditions": [],
     "effects": { "STR": 1 },
     "weight": 1,
-    "priority": 0
+    "priority": 0,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-none"]
   },
   {
     "id": "college-none",
@@ -406,7 +433,8 @@
     "conditions": [],
     "effects": {},
     "weight": 1,
-    "priority": 0
+    "priority": 0,
+    "repels": ["college-duke", "college-ivy-league", "college-uc-berkeley", "college-liberal-arts", "college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang", "college-renmin", "college-nanjing", "college-wuhan", "college-xian-jiaotong", "college-sichuan", "college-huazhong-tech", "college-211", "college-provincial", "college-private", "college-dazhuan", "college-vocational"]
   },
   {
     "id": "freshman-orientation",
@@ -1919,18 +1947,19 @@
     "text": "You didn't make the cutoff for high school. You are sent to a vocational school to learn welding. The teachers don't really care.",
     "conditions": [{ "INT": { "max": 4 } }],
     "effects": { "INT": -1, "STR": 1 },
-    "weight": 10
+    "weight": 10,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "key-school-pressure"]
   },
   {
     "id": "key-school-pressure",
     "schedule": [
-      { "age": 16, "weight": 5 },
-      { "age": 17, "weight": 5 }
+      { "age": 16, "weight": 5 }
     ],
     "text": "You got into a 'Key High School' (Zhongdian). The pressure is suffocating, but the university acceptance rate is 90%.",
     "conditions": [{ "INT": { "min": 7 } }],
     "effects": { "SPR": -1, "INT": 1 },
-    "weight": 5
+    "weight": 5,
+    "repels": ["high-school-key", "high-school-normal", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track"]
   },
   {
     "id": "english-accent",

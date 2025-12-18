@@ -20,7 +20,6 @@ async function startRun() {
   <section class="space-y-6">
     <div class="space-y-3 text-center">
       <h2 class="font-display text-4xl font-semibold text-slate-900 flex items-center justify-center gap-3">
-        <img src="@/assets/restart.ico" alt="" class="h-10 w-10">
         Inequality Simulator
       </h2>
       <p class="text-sm text-slate-700">

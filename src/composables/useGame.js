@@ -58,6 +58,9 @@ export function useGame() {
         if (picked) {
           queue.push(picked)
           pickedIds.push(picked.id)
+          if (Array.isArray(picked.repels)) {
+            pickedIds.push(...picked.repels)
+          }
           const branch = events.pickBranch(picked, baseContext)
           if (branch) queue.push(branch)
         }
