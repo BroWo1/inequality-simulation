@@ -12,13 +12,18 @@ export function useCondition() {
         if (missing) return false
       }
 
+      if (Array.isArray(condition?.excludeTalents)) {
+        const hasExcluded = condition.excludeTalents.some((talent) => ownedTalents.includes(talent))
+        if (hasExcluded) return false
+      }
+
       if (Array.isArray(condition?.events)) {
         const missingEvent = condition.events.some((eventId) => !eventCounts[eventId])
         if (missingEvent) return false
       }
 
       return Object.entries(condition)
-        .filter(([key]) => key !== 'talents' && key !== 'events')
+        .filter(([key]) => key !== 'talents' && key !== 'excludeTalents' && key !== 'events')
         .every(([key, rule]) => checkStatRule(stats[key] ?? 0, rule))
     })
   }

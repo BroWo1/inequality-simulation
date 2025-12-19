@@ -197,5 +197,61 @@
     "rollWeight": 1,
     "effects": { "MNY": -1, "INT": 1 },
     "exclusions": ["rural-hukou"]
+  },
+  {
+    "id": "left-behind-child",
+    "name": "Left-Behind Child",
+    "description": "Your parents are migrant workers in distant cities. You were raised by grandparents in the village, seeing your parents once a year during Spring Festival.",
+    "grade": 1,
+    "effects": { "SPR": -1 },
+    "exclusions": ["urban-hukou", "system-insider"]
+  },
+  {
+    "id": "996-worker",
+    "name": "996 Warrior",
+    "description": "You embrace the '996' lifestyle: 9 AM to 9 PM, 6 days a week. 'Working overtime is a blessing,' said someone who owns a yacht.",
+    "grade": 1,
+    "effects": { "MNY": 1, "STR": -1 },
+    "exclusions": ["fish-touching-master"]
+  },
+  {
+    "id": "gaokao-repeater",
+    "name": "Gaokao Repeater",
+    "description": "One exam decides everything. You didn't make it the first time. Or the second. You know Maomao Factory's study halls better than your own bedroom.",
+    "grade": 1,
+    "effects": { "INT": 1, "SPR": -1 },
+    "exclusions": ["international-track"]
+  },
+  {
+    "id": "fuerdai",
+    "name": "Fuerdai",
+    "description": "You are the 'Rich Second Generation'. Your father built an empire; you inherited a Porsche and a trust fund. People assume you're useless.",
+    "grade": 3,
+    "effects": { "MNY": 2, "CHR": 1 },
+    "exclusions": ["rural-hukou", "migrant-roots", "scrappy"]
+  },
+  {
+    "id": "yiyuan-guanxi",
+    "name": "Hospital Connections",
+    "description": "Your aunt is a department head, your uncle is a surgeon. When you get sick, you skip the 3-hour queue and go straight to the expert.",
+    "grade": 2,
+    "effects": { "STR": 1 },
+    "exclusions": ["rural-hukou"]
+  },
+  {
+    "id": "dingke",
+    "name": "DingKe",
+    "description": "Double Income, No Kids. You and your partner chose freedom over family lineage. Your parents are devastated. Your bank account is thriving.",
+    "grade": 1,
+    "effects": { "MNY": 1, "SPR": 1 },
+    "exclusions": ["only-child", "big-family"]
+  },
+  {
+    "id": "tongzhi",
+    "name": "Tongzhi",
+    "description": "You are '同志' - part of the rainbow community. In a society obsessed with marriage and bloodlines, your identity is both invisible and impossible to hide.",
+    "grade": 1,
+    "effects": { "SPR": -1 },
+    "exclusions": ["straight-man-cancer"]
   }
 ]

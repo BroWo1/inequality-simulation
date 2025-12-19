@@ -69,7 +69,7 @@
     ],
     "text": "Your parents read you a fantastical story before bed.",
     "conditions": [],
-    "effects": { "INT": 1 },
+    "effects": {},
     "weight": 6
   },
   {
@@ -198,7 +198,7 @@
     "id": "high-school-normal",
     "text": "You enroll in a normal high school. Steady pace, steady progress.",
     "conditions": [{ "INT": { "min": 5 } }, { "MNY": { "min": 2 } }],
-    "effects": { "INT": 1 },
+    "effects": {},
     "weight": 1,
     "priority": 1,
     "repels": ["high-school-key", "high-school-zhongzhuan", "high-school-bnu-experimental", "high-school-rdfz", "high-school-qhfz", "high-school-international", "vocational-track", "key-school-pressure"]
@@ -1332,7 +1332,7 @@
       { "age": 32, "weight": 3 }
     ],
     "text": "Your first child was born. Sleep became a distant memory.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1, "MNY": -1 },
     "weight": 4
   },
@@ -1356,7 +1356,7 @@
       { "age": 33, "weight": 3 }
     ],
     "text": "Your kid took their first steps. You forgot every sleepless night instantly.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1 },
     "weight": 4
   },
@@ -1368,7 +1368,7 @@
       { "age": 34, "weight": 3 }
     ],
     "text": "Daycare costs more than rent. You briefly consider quitting your job.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "MNY": -1 },
     "weight": 4
   },
@@ -1404,7 +1404,7 @@
       { "age": 37, "weight": 3 }
     ],
     "text": "Your kid started school. You cried more than they did.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": {},
     "weight": 4
   },
@@ -1500,7 +1500,7 @@
       { "age": 52, "weight": 3 }
     ],
     "text": "Your kid graduated. You took too many photos and cried in public.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1 },
     "weight": 4
   },
@@ -1512,7 +1512,7 @@
       { "age": 52, "weight": 4 }
     ],
     "text": "The house is quiet now. You're not sure what to do with all this space.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": {},
     "weight": 4
   },
@@ -1573,7 +1573,7 @@
       { "age": 58, "weight": 3 }
     ],
     "text": "Your first grandchild was born. All the best parts of parenting, none of the midnight feedings.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1 },
     "weight": 4
   },
@@ -1633,7 +1633,7 @@
       { "age": 70, "weight": 4 }
     ],
     "text": "The grandkids visited. You spoiled them rotten and sent them home hyper.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1 },
     "weight": 4
   },
@@ -1729,7 +1729,7 @@
       { "age": 80, "weight": 3 }
     ],
     "text": "Your first great-grandchild was born. Four generations now.",
-    "conditions": [],
+    "conditions": [{ "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": 1 },
     "weight": 4
   },
@@ -2794,58 +2794,6 @@
     "death": true
   },
   {
-    "id": "youth-depression-isolation",
-    "schedule": [
-      { "age": 13, "weight": 2 },
-      { "age": 15, "weight": 3 },
-      { "age": 17, "weight": 3 }
-    ],
-    "text": "The darkness inside grew too heavy. No one noticed the signs. One night, you decided not to wake up tomorrow.",
-    "conditions": [{ "SPR": { "max": 0 } }],
-    "effects": {},
-    "weight": 3,
-    "death": true
-  },
-  {
-    "id": "youth-bullying-despair",
-    "schedule": [
-      { "age": 12, "weight": 2 },
-      { "age": 14, "weight": 3 },
-      { "age": 16, "weight": 2 }
-    ],
-    "text": "The bullying never stopped. Your spirit, already broken, finally shattered completely. You saw no way forward.",
-    "conditions": [{ "SPR": { "max": 0 } }],
-    "effects": {},
-    "weight": 3,
-    "death": true
-  },
-  {
-    "id": "youth-exam-pressure",
-    "schedule": [
-      { "age": 15, "weight": 3 },
-      { "age": 17, "weight": 4 }
-    ],
-    "text": "The pressure to succeed crushed what little joy remained. After failing the exam, you felt there was nothing left to live for.",
-    "conditions": [{ "SPR": { "max": 0 } }],
-    "effects": {},
-    "weight": 3,
-    "death": true
-  },
-  {
-    "id": "youth-loneliness-crisis",
-    "schedule": [
-      { "age": 11, "weight": 2 },
-      { "age": 14, "weight": 2 },
-      { "age": 16, "weight": 2 }
-    ],
-    "text": "You had no one to talk to. The loneliness consumed everything. In the end, the silence was all that remained.",
-    "conditions": [{ "SPR": { "max": 0 } }],
-    "effects": {},
-    "weight": 3,
-    "death": true
-  },
-
-  {
     "id": "childhood-popular-kid",
     "schedule": [
       { "age": 8, "weight": 4 },
@@ -3572,7 +3520,7 @@
     "id": "hukou-child-school",
     "schedule": [{ "age": 32, "weight": 3 }, { "age": 35, "weight": 3 }],
     "text": "Your child can't attend local public school - wrong hukou. Private school costs ¥80,000/year. Or send them back to grandparents.",
-    "conditions": [{ "talents": ["rural-hukou"] }],
+    "conditions": [{ "talents": ["rural-hukou"] }, { "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": -1 },
     "weight": 3
   },
@@ -3580,7 +3528,7 @@
     "id": "hukou-gaokao-return",
     "schedule": [{ "age": 45, "weight": 3 }, { "age": 48, "weight": 3 }],
     "text": "Your child must return to your hometown for gaokao. Different textbooks, no friends, fierce competition. The system is rigged.",
-    "conditions": [{ "talents": ["rural-hukou"] }],
+    "conditions": [{ "talents": ["rural-hukou"] }, { "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "SPR": -1 },
     "weight": 3
   },
@@ -3614,7 +3562,7 @@
     "id": "involution-child",
     "schedule": [{ "age": 35, "weight": 4 }, { "age": 38, "weight": 4 }, { "age": 42, "weight": 3 }],
     "text": "Your 6-year-old has math tutoring, English tutoring, piano, swimming, and coding classes. This is 内卷 (involution). Everyone competes, nobody wins.",
-    "conditions": [{ "MNY": { "min": 5 } }],
+    "conditions": [{ "MNY": { "min": 5 } }, { "excludeTalents": ["dingke", "tongzhi"] }],
     "effects": { "MNY": -1, "SPR": -1 },
     "weight": 4
   },
@@ -3685,5 +3633,405 @@
     "conditions": [],
     "effects": { "MNY": 1 },
     "weight": 2
+  },
+
+  {
+    "id": "leftbehind-phone-call",
+    "schedule": [{ "age": 5, "weight": 20 }, { "age": 6, "weight": 20 }, { "age": 7, "weight": 15 }],
+    "text": "Mom calls from Shenzhen. You can hear factory machines in the background. 'Study hard,' she says. 'We're doing this for you.'",
+    "conditions": [{ "talents": ["left-behind-child"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "leftbehind-spring-festival",
+    "schedule": [{ "age": 8, "weight": 20 }, { "age": 9, "weight": 20 }, { "age": 10, "weight": 15 }],
+    "text": "Spring Festival! Your parents came home with snacks and a new jacket. You hid behind grandma, suddenly shy around these strangers.",
+    "conditions": [{ "talents": ["left-behind-child"] }],
+    "effects": { "SPR": 1, "CHR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "leftbehind-grandpa-sick",
+    "schedule": [{ "age": 12, "weight": 20 }],
+    "text": "Grandpa collapsed in the field. You ran 3 kilometers to the village clinic. The doctor said he needs a city hospital, but who will take him?",
+    "conditions": [{ "talents": ["left-behind-child"] }],
+    "effects": { "STR": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "leftbehind-boarding-school",
+    "schedule": [{ "age": 13, "weight": 20 }],
+    "text": "You moved to a county boarding school. The beds are hard, the food is bad, but at least there are teachers who notice you.",
+    "conditions": [{ "talents": ["left-behind-child"] }],
+    "effects": { "INT": 1 },
+    "weight": 20
+  },
+  {
+    "id": "leftbehind-reunion-awkward",
+    "schedule": [{ "age": 16, "weight": 20 }],
+    "text": "Your parents finally brought you to the city. But you don't know the local dialect, the classmates call you '乡下人' (country bumpkin).",
+    "conditions": [{ "talents": ["left-behind-child"] }],
+    "effects": { "CHR": -1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "leftbehind-resilience",
+    "schedule": [{ "age": 22, "weight": 15 }],
+    "text": "You graduated despite everything. Your parents cried at the ceremony. Grandma watched via a shaky video call from the village.",
+    "conditions": [{ "talents": ["left-behind-child"] }, { "INT": { "min": 6 } }],
+    "effects": { "SPR": 1, "CHR": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "996-first-job",
+    "schedule": [{ "age": 23, "weight": 20 }, { "age": 24, "weight": 20 }],
+    "text": "Your first tech job! The salary is good. Nobody mentioned you'd be answering Ding Talk messages at midnight.",
+    "conditions": [{ "talents": ["996-worker"] }],
+    "effects": { "MNY": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "996-midnight-taxi",
+    "schedule": [{ "age": 25, "weight": 20 }, { "age": 26, "weight": 20 }],
+    "text": "You left the office at 11 PM. The company pays for taxis after 10 PM. What a 'benefit.'",
+    "conditions": [{ "talents": ["996-worker"] }],
+    "effects": {},
+    "weight": 20
+  },
+  {
+    "id": "996-health-warning",
+    "schedule": [{ "age": 28, "weight": 20 }, { "age": 29, "weight": 20 }],
+    "text": "The company health check revealed fatty liver and high blood pressure. You're 28. The doctor asked if you drink. You said no, just stress.",
+    "conditions": [{ "talents": ["996-worker"] }],
+    "effects": { "STR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "996-promotion",
+    "schedule": [{ "age": 30, "weight": 15 }],
+    "text": "You got promoted to team lead! More money, more responsibility, more 996. The cycle continues.",
+    "conditions": [{ "talents": ["996-worker"] }, { "INT": { "min": 6 } }],
+    "effects": { "MNY": 1, "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "996-colleague-collapse",
+    "schedule": [{ "age": 32, "weight": 20 }],
+    "text": "A colleague collapsed at his desk. The ambulance came. The group chat was silent. The next day, everyone came back to work.",
+    "conditions": [{ "talents": ["996-worker"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "996-lay-off",
+    "schedule": [{ "age": 35, "weight": 20 }],
+    "text": "The company 'optimized' your position. At 35, you're considered 'too old' for tech. All those late nights meant nothing.",
+    "conditions": [{ "talents": ["996-worker"] }, { "MNY": { "max": 6 } }],
+    "effects": { "MNY": -1, "SPR": -1 },
+    "weight": 20
+  },
+
+  {
+    "id": "gaokao-first-fail",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "The scores came out. You didn't make the cutoff. Your parents paid for another year at a 'gaokao factory' in Maomao.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20,
+    "repels": ["college-tsinghua", "college-peking", "college-fudan", "college-shanghai-jiaotong", "college-zhejiang"]
+  },
+  {
+    "id": "gaokao-study-hell",
+    "schedule": [{ "age": 19, "weight": 20 }],
+    "text": "5:30 AM wake-up, study until 11 PM. IV drips in the classroom for 'energy'. This is Hengshui-style education.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }],
+    "effects": { "INT": 1, "STR": -1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "gaokao-pressure-breakdown",
+    "schedule": [{ "age": 19, "weight": 15 }],
+    "text": "The pressure became too much. You cried in the bathroom for an hour. Then wiped your face and went back to practice problems.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "gaokao-success",
+    "schedule": [{ "age": 19, "weight": 15 }],
+    "text": "Second time's the charm! You scored 50 points higher. The village will remember your name on the 'honor student' banner.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }, { "INT": { "min": 7 } }],
+    "effects": { "SPR": 1, "CHR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "gaokao-third-try",
+    "schedule": [{ "age": 20, "weight": 10 }],
+    "text": "Two failures. Your parents are silent. Neighbors whisper. You sign up for a third year. At this point, it's about pride.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }, { "INT": { "max": 6 } }],
+    "effects": { "INT": 1, "SPR": -1 },
+    "weight": 10
+  },
+  {
+    "id": "gaokao-teacher-memory",
+    "schedule": [{ "age": 30, "weight": 10 }],
+    "text": "You still have nightmares about the Gaokao. The smell of pencils makes you anxious. Some scars never heal.",
+    "conditions": [{ "talents": ["gaokao-repeater"] }],
+    "effects": {},
+    "weight": 10
+  },
+
+  {
+    "id": "fuerdai-first-car",
+    "schedule": [{ "age": 18, "weight": 20 }],
+    "text": "Happy 18th birthday! Dad gave you a BMW. Your classmates who take the bus stare with complicated expressions.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "CHR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "fuerdai-study-abroad",
+    "schedule": [{ "age": 19, "weight": 20 }],
+    "text": "Your grades weren't great, but dad 'donated' to a university library. Welcome to USC, class of rich Asian kids.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "CHR": 1, "INT": -1 },
+    "weight": 20
+  },
+  {
+    "id": "fuerdai-fake-friends",
+    "schedule": [{ "age": 22, "weight": 20 }],
+    "text": "Everyone wants to be your friend. You can never tell if they like you or your father's money.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "fuerdai-prove-yourself",
+    "schedule": [{ "age": 25, "weight": 15 }],
+    "text": "You started your own company without telling dad. It failed spectacularly. But at least it was YOUR failure.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "INT": 1, "MNY": -1 },
+    "weight": 15
+  },
+  {
+    "id": "fuerdai-family-business",
+    "schedule": [{ "age": 28, "weight": 20 }],
+    "text": "Dad is getting old. You reluctantly took over part of the family business. The employees don't respect you yet.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "MNY": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "fuerdai-marriage-pressure",
+    "schedule": [{ "age": 30, "weight": 20 }],
+    "text": "Mom keeps introducing 'suitable matches' - children of other business families. Love is a merger negotiation.",
+    "conditions": [{ "talents": ["fuerdai"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "fuerdai-redemption",
+    "schedule": [{ "age": 35, "weight": 10 }],
+    "text": "You expanded the business into a new market and succeeded. Finally, people say 'he's capable' instead of 'he's rich.'",
+    "conditions": [{ "talents": ["fuerdai"] }, { "INT": { "min": 6 } }],
+    "effects": { "CHR": 1, "SPR": 1 },
+    "weight": 10
+  },
+
+  {
+    "id": "hospital-childhood-checkup",
+    "schedule": [{ "age": 5, "weight": 20 }],
+    "text": "You had a fever. Mom called Auntie, and you went straight to the VIP ward. The other kids in the crowded ER watched you pass.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": { "STR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "hospital-surgery-queue",
+    "schedule": [{ "age": 15, "weight": 20 }],
+    "text": "You needed minor surgery. The waitlist was 3 months. Your uncle made a call. Surgery was next Tuesday.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": { "STR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "hospital-truth-learned",
+    "schedule": [{ "age": 18, "weight": 15 }],
+    "text": "You saw the regular queue for the first time - hundreds of people camping overnight for a number. You finally understood your privilege.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": {},
+    "weight": 15
+  },
+  {
+    "id": "hospital-parent-emergency",
+    "schedule": [{ "age": 35, "weight": 20 }],
+    "text": "Your mother had a stroke. One phone call. Best neurologist. Private room. She recovered. You wonder what happens to people without connections.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": { "STR": 1, "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "hospital-favor-economy",
+    "schedule": [{ "age": 40, "weight": 15 }],
+    "text": "A distant relative called asking you to connect them to your doctor uncle. The favor economy never stops.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": { "CHR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "hospital-gratitude",
+    "schedule": [{ "age": 50, "weight": 15 }],
+    "text": "Looking back, you realize how many times those hospital connections saved your family from tragedy. Access isn't equal, and you benefited.",
+    "conditions": [{ "talents": ["yiyuan-guanxi"] }],
+    "effects": {},
+    "weight": 15
+  },
+
+  {
+    "id": "dingke-announcement",
+    "schedule": [{ "age": 28, "weight": 20 }, { "age": 30, "weight": 20 }],
+    "text": "You told your parents you're not having children. Mom cried. Dad said the family line ends with you. You said: 'Good.'",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-spring-festival",
+    "schedule": [{ "age": 32, "weight": 20 }, { "age": 35, "weight": 20 }, { "age": 38, "weight": 15 }],
+    "text": "Spring Festival dinner. Every relative asks about children. You've perfected the art of changing the subject to their health problems.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-pet-parent",
+    "schedule": [{ "age": 30, "weight": 20 }, { "age": 35, "weight": 15 }],
+    "text": "You adopted a cat. Your mom calls it her 'grandchild'. She's not entirely joking anymore.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-travel-freedom",
+    "schedule": [{ "age": 35, "weight": 20 }, { "age": 40, "weight": 20 }],
+    "text": "While colleagues scramble for childcare during holidays, you book a last-minute flight to Japan. Freedom has its perks.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-savings",
+    "schedule": [{ "age": 40, "weight": 20 }, { "age": 45, "weight": 20 }],
+    "text": "Your friends calculate school tuition. You calculate early retirement. Different life, different math.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "MNY": 1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-old-age-worry",
+    "schedule": [{ "age": 55, "weight": 20 }, { "age": 60, "weight": 20 }],
+    "text": "Who will take care of you when you're old? The question haunts you. You research nursing homes in Thailand.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "dingke-peace",
+    "schedule": [{ "age": 65, "weight": 15 }],
+    "text": "Your friends complain about ungrateful children. You sit in your quiet apartment, reading a book. No regrets.",
+    "conditions": [{ "talents": ["dingke"] }],
+    "effects": { "SPR": 1 },
+    "weight": 15
+  },
+
+  {
+    "id": "tongzhi-realization",
+    "schedule": [{ "age": 14, "weight": 20 }, { "age": 15, "weight": 20 }, { "age": 16, "weight": 15 }],
+    "text": "You realize you're different. The crushes you have don't match the ones you're supposed to have. You tell no one.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "tongzhi-hiding",
+    "schedule": [{ "age": 18, "weight": 20 }, { "age": 20, "weight": 20 }],
+    "text": "Your roommates talk about dating. You laugh along, invent a girlfriend/boyfriend back home. The closet is lonely.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": -1, "CHR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "tongzhi-first-love",
+    "schedule": [{ "age": 22, "weight": 20 }, { "age": 24, "weight": 20 }],
+    "text": "You found someone like you. Secret dates, coded messages, never holding hands in public. Love in the shadows.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "tongzhi-marriage-pressure",
+    "schedule": [{ "age": 26, "weight": 20 }, { "age": 28, "weight": 20 }, { "age": 30, "weight": 20 }],
+    "text": "Your parents arranged a blind date. You went, smiled politely, and felt like a fraud. 'Such a nice girl/boy,' they said.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": -1 },
+    "weight": 20
+  },
+  {
+    "id": "tongzhi-xinghun",
+    "schedule": [{ "age": 30, "weight": 15 }, { "age": 32, "weight": 15 }],
+    "text": "You considered a 'xinghun' (cooperative marriage) - a gay person marrying a lesbian for appearances. Society demands theater.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "tongzhi-coming-out",
+    "schedule": [{ "age": 28, "weight": 10 }, { "age": 35, "weight": 10 }],
+    "text": "You told your parents. Mom didn't speak for a week. Dad said you were 'confused'. It's been years. They still hope you'll 'change'.",
+    "conditions": [{ "talents": ["tongzhi"] }, { "CHR": { "min": 5 } }],
+    "effects": { "SPR": 1, "CHR": -1 },
+    "weight": 10
+  },
+  {
+    "id": "tongzhi-community",
+    "schedule": [{ "age": 25, "weight": 20 }, { "age": 30, "weight": 15 }],
+    "text": "You found a community online. Hidden WeChat groups, coded language. You're not alone after all.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "CHR": 1, "SPR": 1 },
+    "weight": 20
+  },
+  {
+    "id": "tongzhi-censorship",
+    "schedule": [{ "age": 30, "weight": 15 }, { "age": 35, "weight": 15 }],
+    "text": "Your favorite LGBTQ Weibo accounts disappeared overnight. The rainbow flag is 'sensitive content'. Visibility shrinks.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": -1 },
+    "weight": 15
+  },
+  {
+    "id": "tongzhi-abroad-dream",
+    "schedule": [{ "age": 28, "weight": 15 }, { "age": 32, "weight": 15 }],
+    "text": "You researched countries where you could marry legally. Canada, Netherlands, Taiwan... The rainbow seems far away.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": {},
+    "weight": 15
+  },
+  {
+    "id": "tongzhi-long-term-partner",
+    "schedule": [{ "age": 40, "weight": 15 }, { "age": 45, "weight": 15 }],
+    "text": "You've been with your partner for 15 years. No legal recognition, no hospital visitation rights. But you built a life together.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "SPR": 1 },
+    "weight": 15
+  },
+  {
+    "id": "tongzhi-elder-wisdom",
+    "schedule": [{ "age": 55, "weight": 15 }],
+    "text": "Young LGBTQ kids find you online. You share your story. Survival is its own form of resistance.",
+    "conditions": [{ "talents": ["tongzhi"] }],
+    "effects": { "CHR": 1, "SPR": 1 },
+    "weight": 15
   }
 ]
